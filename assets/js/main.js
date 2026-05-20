@@ -11,11 +11,13 @@
   function openMenu() {
     mobileMenu.classList.add('open');
     document.body.style.overflow = 'hidden';
+    hamburger.setAttribute('aria-expanded', 'true');
   }
 
   function closeMenu() {
     mobileMenu.classList.remove('open');
     document.body.style.overflow = '';
+    hamburger.setAttribute('aria-expanded', 'false');
   }
 
   if (hamburger) hamburger.addEventListener('click', openMenu);
@@ -54,6 +56,10 @@
       closeSearch();
       closeMenu();
     }
+    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+      e.preventDefault();
+      openSearch();
+    }
   });
 
   // ===== BACK TO TOP =====
@@ -61,7 +67,7 @@
 
   window.addEventListener('scroll', () => {
     if (backToTop) {
-      backToTop.classList.toggle('visible', window.scrollY > 400);
+      backToTop.classList.toggle('visible', window.scrollY > 450);
     }
   }, { passive: true });
 
@@ -74,36 +80,22 @@
   // ===== SCROLL ANIMATIONS =====
   const animatedEls = document.querySelectorAll('[data-animate]');
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-
-  animatedEls.forEach(el => observer.observe(el));
-
-  // ===== LAZY LOADING IMAGES =====
   if ('IntersectionObserver' in window) {
-    const lazyImages = document.querySelectorAll('img[data-src]');
-    const imgObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
         if (entry.isIntersecting) {
-          const img = entry.target;
-          img.src = img.dataset.src;
-          img.removeAttribute('data-src');
-          imgObserver.unobserve(img);
+          const delay = entry.target.dataset.delay || 0;
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, parseInt(delay));
+          observer.unobserve(entry.target);
         }
       });
-    }, { rootMargin: '200px 0px' });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-    lazyImages.forEach(img => imgObserver.observe(img));
+    animatedEls.forEach(el => observer.observe(el));
   } else {
-    document.querySelectorAll('img[data-src]').forEach(img => {
-      img.src = img.dataset.src;
-    });
+    animatedEls.forEach(el => el.classList.add('visible'));
   }
 
   // ===== NEWSLETTER FORM =====
@@ -114,37 +106,58 @@
     if (!toast) return;
     toast.querySelector('.toast-msg').textContent = msg;
     toast.classList.add('show');
-    setTimeout(() => toast.classList.remove('show'), 4000);
+    setTimeout(() => toast.classList.remove('show'), 4500);
+  }
+
+  function isValidEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
 
   if (newsletterForm) {
     newsletterForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      const email = newsletterForm.querySelector('input[type="email"]').value;
-      if (!email) return;
+      const emailInput = newsletterForm.querySelector('input[type="email"]');
+      const email = emailInput ? emailInput.value.trim() : '';
+
+      if (!email || !isValidEmail(email)) {
+        emailInput && emailInput.focus();
+        showToast('Veuillez entrer une adresse email valide.');
+        return;
+      }
+
       const btn = newsletterForm.querySelector('button[type="submit"]');
-      btn.textContent = 'Inscription en cours...';
+      const originalHTML = btn.innerHTML;
+      btn.innerHTML = 'Inscription en cours…';
       btn.disabled = true;
+
       setTimeout(() => {
-        btn.textContent = 'Inscrit !';
-        showToast('Bienvenue ! Vous êtes bien inscrit à notre newsletter.');
+        btn.innerHTML = '&#10003; Inscrit avec succès !';
+        showToast('Bienvenue ! Vous recevrez nos meilleures recettes dès demain.');
         newsletterForm.reset();
-        setTimeout(() => { btn.textContent = "S'abonner à la newsletter"; btn.disabled = false; }, 3000);
+        setTimeout(() => {
+          btn.innerHTML = originalHTML;
+          btn.disabled = false;
+        }, 3500);
       }, 1200);
     });
   }
 
-  // ===== STICKY HEADER SHADOW =====
+  // ===== STICKY HEADER =====
   const header = document.querySelector('.header');
+  let lastScroll = 0;
+
   window.addEventListener('scroll', () => {
-    if (header) {
-      header.style.boxShadow = window.scrollY > 10
-        ? '0 4px 20px rgba(0,0,0,0.12)'
-        : '0 2px 8px rgba(0,0,0,0.08)';
+    if (!header) return;
+    const currentScroll = window.scrollY;
+    if (currentScroll > 10) {
+      header.style.boxShadow = '0 4px 24px rgba(0,0,0,0.12)';
+    } else {
+      header.style.boxShadow = '0 2px 8px rgba(0,0,0,0.08)';
     }
+    lastScroll = currentScroll;
   }, { passive: true });
 
-  // ===== SEARCH TAGS CLICK =====
+  // ===== SEARCH TAGS =====
   document.querySelectorAll('.search-tags a').forEach(tag => {
     tag.addEventListener('click', (e) => {
       e.preventDefault();
@@ -152,6 +165,13 @@
         searchInput.value = tag.textContent;
         searchInput.focus();
       }
+    });
+  });
+
+  // ===== STAGGERED CARD ANIMATIONS =====
+  document.querySelectorAll('.articles-grid').forEach(grid => {
+    grid.querySelectorAll('[data-animate]').forEach((card, i) => {
+      card.dataset.delay = i * 90;
     });
   });
 

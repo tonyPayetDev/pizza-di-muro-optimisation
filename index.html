@@ -4,68 +4,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pizza Di Muro : Recettes faciles, astuces cuisine et actualités food au quotidien</title>
-  <meta name="description" content="Découvrez Pizza Di Muro, votre source quotidienne de recettes simples, astuces culinaires de chefs, décryptages d'aliments et actualités food pour mieux manger.">
+  <meta name="description" content="Découvrez Pizza Di Muro, votre source de recettes simples, astuces culinaires de chefs, décryptages alimentaires et actualités food pour mieux manger chaque jour.">
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="Pizza Di Muro : Recettes faciles, astuces cuisine et actualités food au quotidien">
-  <meta property="og:description" content="Découvrez Pizza Di Muro, votre source quotidienne de recettes simples, astuces culinaires de chefs, décryptages d'aliments et actualités food.">
+  <meta property="og:description" content="Découvrez Pizza Di Muro, votre source de recettes simples, astuces culinaires de chefs, décryptages alimentaires et actualités food pour mieux manger chaque jour.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pizza-dimuro.fr/">
   <meta property="og:image" content="assets/images/hero-pizza.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pizza Di Muro : Recettes faciles, astuces cuisine et actualités food au quotidien">
+  <meta name="twitter:description" content="Découvrez Pizza Di Muro, votre source de recettes simples, astuces culinaires de chefs, décryptages alimentaires et actualités food pour mieux manger chaque jour.">
   <meta name="theme-color" content="#e12c2c">
   <link rel="canonical" href="https://pizza-dimuro.fr/">
-  <!-- Fonts -->
+
+  <!-- Preconnect pour Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Libre Franklin (texte) + Inter (titres/UI) -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <!-- Styles -->
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Pizza Di Muro",
+    "url": "https://pizza-dimuro.fr/",
+    "description": "Votre magazine food quotidien : recettes faciles, astuces de chefs, décryptages alimentaires et actualités food.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://pizza-dimuro.fr/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
 </head>
 <body>
 
 <!-- ===== HEADER ===== -->
-<header class="header">
-  <!-- Top bar -->
+<header class="header" role="banner">
+  <!-- Barre supérieure -->
   <div class="header-top">
     <div class="container">
       <span class="header-top-text">Votre magazine food du quotidien &mdash; Recettes, astuces et actualités</span>
-      <div class="social-links">
-        <!-- Facebook -->
-        <a href="#" aria-label="Facebook">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      <div class="social-links" aria-label="Nos réseaux sociaux">
+        <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
         </a>
-        <!-- Instagram -->
-        <a href="#" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         </a>
-        <!-- YouTube -->
-        <a href="#" aria-label="YouTube">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+        <a href="https://youtube.com" aria-label="YouTube" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#00171e"/></svg>
         </a>
-        <!-- TikTok -->
-        <a href="#" aria-label="TikTok">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.89a8.28 8.28 0 0 0 4.84 1.55V7a4.85 4.85 0 0 1-1.07-.31z"/></svg>
+        <a href="https://tiktok.com" aria-label="TikTok" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.89a8.28 8.28 0 0 0 4.84 1.55V7a4.85 4.85 0 0 1-1.07-.31z"/></svg>
         </a>
       </div>
     </div>
   </div>
-  <!-- Navbar -->
-  <nav class="navbar">
+
+  <!-- Barre de navigation -->
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
     <div class="container">
       <div class="nav-inner">
-        <a href="/" class="logo" aria-label="Pizza Di Muro - Accueil">
-          <img src="assets/images/logo.png" alt="Pizza Di Muro" width="160" height="46">
+        <a href="/" class="logo" aria-label="Pizza Di Muro – Retour à l'accueil">
+          <img src="assets/images/logo.png" alt="Pizza Di Muro" width="160" height="44" loading="eager">
         </a>
-        <ul class="nav-links" role="navigation" aria-label="Navigation principale">
+        <ul class="nav-links">
           <li><a href="#actualites">Actualités</a></li>
           <li><a href="#recettes">Recettes</a></li>
           <li><a href="#aliments">Aliments</a></li>
           <li><a href="#astuces">Astuces</a></li>
         </ul>
         <div class="nav-right">
-          <button class="search-btn" id="searchBtn" aria-label="Rechercher">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <button class="search-btn" id="searchBtn" aria-label="Ouvrir la recherche" title="Rechercher (Ctrl+K)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
           </button>
           <a href="#newsletter" class="btn btn-primary">Newsletter</a>
-          <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
             <span></span><span></span><span></span>
           </button>
         </div>
@@ -74,14 +94,14 @@
   </nav>
 </header>
 
-<!-- ===== MOBILE MENU ===== -->
-<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu mobile">
+<!-- ===== MENU MOBILE ===== -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu de navigation mobile">
   <div class="mobile-menu-header">
     <a href="/" class="logo">
-      <img src="assets/images/logo.png" alt="Pizza Di Muro" height="40">
+      <img src="assets/images/logo.png" alt="Pizza Di Muro" height="40" loading="lazy">
     </a>
     <button class="mobile-close" id="mobileClose" aria-label="Fermer le menu">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
     </button>
   </div>
   <nav class="mobile-nav-links" aria-label="Navigation mobile">
@@ -95,27 +115,27 @@
 
 <!-- ===== HERO ===== -->
 <section class="hero" aria-label="Bannière principale">
-  <div class="hero-bg" role="img" aria-label="Pizza délicieuse"></div>
+  <div class="hero-bg" role="img" aria-label="Image de pizza maison appétissante"></div>
   <div class="container">
     <div class="hero-row">
       <div class="hero-content">
         <div class="hero-badge">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           Magazine Food &bull; Mis à jour chaque jour
         </div>
-        <h1>Pizza Di Muro : <span>Recettes faciles,</span> astuces cuisine et actualités food au quotidien</h1>
+        <h1>Pizza Di Muro : <em>Recettes faciles,</em> astuces cuisine et actualités food au quotidien</h1>
         <p class="hero-desc">Découvrez nos recettes simples et savoureuses, les conseils de nos chefs, les décryptages d'aliments et toutes les actualités food pour mieux manger chaque jour.</p>
         <div class="hero-actions">
           <a href="#recettes" class="btn btn-primary">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
             Explorer les recettes
           </a>
-          <a href="#newsletter" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.5);">
+          <a href="#newsletter" class="btn btn-outline-white">
             S'abonner gratuitement
           </a>
         </div>
       </div>
-      <div class="hero-stats" aria-label="Chiffres clés">
+      <div class="hero-stats" aria-label="Chiffres clés du magazine">
         <div class="hero-stat">
           <div class="number">500+</div>
           <div class="label">Recettes</div>
@@ -133,56 +153,61 @@
   </div>
 </section>
 
-<!-- ===== TRENDING BAR ===== -->
-<div class="trending-bar" aria-label="Articles tendance">
+<!-- ===== BARRE TENDANCES ===== -->
+<div class="trending-bar" aria-label="Articles en tendance">
   <div class="container">
     <div class="trending-inner">
       <span class="trending-label">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
         Tendances
       </span>
-      <div class="trending-scroll">
-        <a href="#recettes">Gigot d'agneau aux herbes</a>
-        <a href="#actualites">Prix des œufs en 2026</a>
-        <a href="#aliments">Les bienfaits des asperges</a>
-        <a href="#astuces">5 astuces pour des pâtes parfaites</a>
-        <a href="#recettes">Gratin dauphinois crémeux</a>
-        <a href="#aliments">Fruits les plus contaminés</a>
+      <div class="trending-scroll" role="list">
+        <a href="#recettes" role="listitem">Gigot d'agneau aux herbes</a>
+        <a href="#actualites" role="listitem">Prix des œufs en 2026</a>
+        <a href="#aliments" role="listitem">Les bienfaits des asperges</a>
+        <a href="#astuces" role="listitem">5 astuces pour des pâtes parfaites</a>
+        <a href="#recettes" role="listitem">Gratin dauphinois crémeux</a>
+        <a href="#aliments" role="listitem">Fruits les plus contaminés</a>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ===== ACTUALITÉS ===== -->
+<!-- ===== SECTION ACTUALITÉS ===== -->
 <section class="section" id="actualites" aria-labelledby="actualites-title">
   <div class="container">
     <div class="section-header" data-animate>
       <div>
         <h2 class="section-title" id="actualites-title">Actualités Food</h2>
-        <p class="section-subtitle">Restez informé des dernières tendances et nouveautés culinaires avec nos articles d'actualité sélectionnés.</p>
+        <p class="section-subtitle">Restez informé avec nos dernières actualités culinaires, tendances food et conseils pour une alimentation saine et gourmande.</p>
       </div>
-      <a href="#" class="btn btn-outline">Découvrez nos actualités</a>
+      <a href="#" class="btn btn-outline">Découvrez les dernières actualités</a>
     </div>
 
-    <!-- Article à la une -->
+    <!-- Article vedette + sidebar -->
     <div class="featured-grid" data-animate>
+      <!-- Article principal -->
       <article class="featured-main">
         <img src="assets/images/actualites-food.jpg"
              alt="Actualité food : tendances culinaires 2026"
-             loading="lazy" width="760" height="480">
+             loading="lazy"
+             width="760"
+             height="480">
         <div class="featured-overlay">
           <span class="tag tag-primary">À la une</span>
           <h2>Pourquoi le prix des œufs explose en 2026 : tout ce qu'il faut savoir</h2>
           <p>La grippe aviaire et les nouvelles réglementations sur le bien-être animal font grimper les prix. On vous explique tout et on vous donne nos astuces pour adapter vos recettes.</p>
           <a href="#" class="btn btn-white" style="align-self:flex-start;">
             Lire l'article
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
       </article>
+
+      <!-- Articles secondaires -->
       <div class="featured-sidebar">
         <article class="featured-sidebar-item">
-          <img src="assets/images/article-1.jpg" alt="Fruits et légumes contaminés" loading="lazy" width="100" height="90">
+          <img src="assets/images/article-1.jpg" alt="Fruits et légumes contaminés aux pesticides" loading="lazy" width="96" height="88">
           <div class="sidebar-item-body">
             <span class="tag tag-green">Santé</span>
             <h3>Les 6 fruits et légumes les plus contaminés en pesticides en 2026</h3>
@@ -190,7 +215,7 @@
           </div>
         </article>
         <article class="featured-sidebar-item">
-          <img src="assets/images/article-2.jpg" alt="Tendances food 2026" loading="lazy" width="100" height="90">
+          <img src="assets/images/article-2.jpg" alt="Grandes tendances culinaires 2026" loading="lazy" width="96" height="88">
           <div class="sidebar-item-body">
             <span class="tag tag-orange">Tendances</span>
             <h3>Les grandes tendances culinaires qui transforment nos assiettes</h3>
@@ -198,7 +223,7 @@
           </div>
         </article>
         <article class="featured-sidebar-item">
-          <img src="assets/images/article-3.jpg" alt="Marché alimentaire local" loading="lazy" width="100" height="90">
+          <img src="assets/images/article-3.jpg" alt="Marchés alimentaires locaux" loading="lazy" width="96" height="88">
           <div class="sidebar-item-body">
             <span class="tag tag-blue">Marché</span>
             <h3>Les marchés locaux reprennent du poil de la bête après la crise</h3>
@@ -206,7 +231,7 @@
           </div>
         </article>
         <article class="featured-sidebar-item">
-          <img src="assets/images/article-4.jpg" alt="Restaurants étoilés" loading="lazy" width="100" height="90">
+          <img src="assets/images/article-4.jpg" alt="Nouveaux étoilés Guide Michelin" loading="lazy" width="96" height="88">
           <div class="sidebar-item-body">
             <span class="tag tag-primary">Gastronomie</span>
             <h3>Guide Michelin : les nouveaux étoilés qui font parler d'eux</h3>
@@ -218,20 +243,24 @@
   </div>
 </section>
 
-<!-- ===== RECETTES ===== -->
+<!-- ===== SECTION RECETTES ===== -->
 <section class="section section-light" id="recettes" aria-labelledby="recettes-title">
   <div class="container">
     <div class="section-header" data-animate>
       <div>
         <h2 class="section-title" id="recettes-title">Nos Recettes</h2>
-        <p class="section-subtitle">Explorez notre collection de recettes faciles et gourmandes pour tous les goûts et toutes les occasions.</p>
+        <p class="section-subtitle">Explorez notre sélection de recettes faciles et savoureuses pour tous les goûts, du classique au moderne, pour régaler toute la famille.</p>
       </div>
       <a href="#" class="btn btn-outline">Voir toutes les recettes</a>
     </div>
     <div class="articles-grid">
       <article class="article-card" data-animate>
         <div class="article-card-img">
-          <img src="assets/images/article-5.jpg" alt="Gigot d'agneau au four" loading="lazy" width="380" height="240">
+          <img src="assets/images/gigot-agneau.jpg"
+               alt="Gigot d'agneau aux flageolets, recette familiale"
+               loading="lazy"
+               width="380"
+               height="240">
         </div>
         <div class="article-card-body">
           <div class="article-card-meta">
@@ -242,13 +271,17 @@
           <p>Un plat généreux et savoureux qui fait l'unanimité. Le gigot rôti lentement se marie à merveille avec les flageolets fondants et les herbes fraîches.</p>
           <a href="#" class="article-read-more">
             Voir la recette
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
       </article>
       <article class="article-card" data-animate>
         <div class="article-card-img">
-          <img src="assets/images/article-6.jpg" alt="Gratin dauphinois" loading="lazy" width="380" height="240">
+          <img src="assets/images/gratin.jpg"
+               alt="Gratin dauphinois crémeux, recette authentique"
+               loading="lazy"
+               width="380"
+               height="240">
         </div>
         <div class="article-card-body">
           <div class="article-card-meta">
@@ -259,13 +292,17 @@
           <p>La recette authentique du gratin dauphinois avec tous les secrets pour obtenir un résultat onctueux, doré et irrésistible à chaque fois.</p>
           <a href="#" class="article-read-more">
             Voir la recette
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
       </article>
       <article class="article-card" data-animate>
         <div class="article-card-img">
-          <img src="assets/images/recettes-cuisine.jpg" alt="Tarte aux fruits de saison" loading="lazy" width="380" height="240">
+          <img src="assets/images/fraisiers.jpg"
+               alt="Tarte aux fraises maison légère et fraîche"
+               loading="lazy"
+               width="380"
+               height="240">
         </div>
         <div class="article-card-body">
           <div class="article-card-meta">
@@ -276,7 +313,7 @@
           <p>Profitez de la saison des fraises avec cette tarte élégante à la crème pâtissière vanillée. Une recette facile qui impressionne toujours les convives.</p>
           <a href="#" class="article-read-more">
             Voir la recette
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
       </article>
@@ -284,20 +321,24 @@
   </div>
 </section>
 
-<!-- ===== ALIMENTS ===== -->
+<!-- ===== SECTION ALIMENTS ===== -->
 <section class="section" id="aliments" aria-labelledby="aliments-title">
   <div class="container">
     <div class="section-header" data-animate>
       <div>
         <h2 class="section-title" id="aliments-title">Encyclopédie des Aliments</h2>
-        <p class="section-subtitle">Apprenez tout sur les aliments, leurs bienfaits, et comment les choisir pour une alimentation saine.</p>
+        <p class="section-subtitle">Apprenez tout sur les aliments, leurs bienfaits, astuces de préparation et conseils nutritionnels pour une meilleure santé au quotidien.</p>
       </div>
       <a href="#" class="btn btn-outline">En savoir plus sur les aliments</a>
     </div>
     <div class="articles-grid">
       <article class="article-card" data-animate>
         <div class="article-card-img">
-          <img src="assets/images/aliments-sains.jpg" alt="Asperges fraîches du printemps" loading="lazy" width="380" height="240">
+          <img src="assets/images/asperges.jpg"
+               alt="Asperges fraîches du printemps, bienfaits et préparation"
+               loading="lazy"
+               width="380"
+               height="240">
         </div>
         <div class="article-card-body">
           <div class="article-card-meta">
@@ -308,13 +349,17 @@
           <p>Légume de printemps par excellence, l'asperge est riche en folates, vitamines et antioxydants. Découvrez tout pour la sélectionner et la cuisiner au mieux.</p>
           <a href="#" class="article-read-more">
             En savoir plus
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
       </article>
       <article class="article-card" data-animate>
         <div class="article-card-img">
-          <img src="assets/images/article-2.jpg" alt="Fraises de saison" loading="lazy" width="380" height="240">
+          <img src="assets/images/article-5.jpg"
+               alt="Fraises de saison, vertus et conseils"
+               loading="lazy"
+               width="380"
+               height="240">
         </div>
         <div class="article-card-body">
           <div class="article-card-meta">
@@ -325,13 +370,17 @@
           <p>Anti-oxydante, riche en vitamine C et en fibres, la fraise est bien plus qu'un plaisir printanier. Tout ce que vous devez savoir sur ce fruit adoré.</p>
           <a href="#" class="article-read-more">
             En savoir plus
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
       </article>
       <article class="article-card" data-animate>
         <div class="article-card-img">
-          <img src="assets/images/article-4.jpg" alt="Huiles alimentaires" loading="lazy" width="380" height="240">
+          <img src="assets/images/alimentation-sante.jpg"
+               alt="Comparatif des huiles alimentaires pour cuisiner"
+               loading="lazy"
+               width="380"
+               height="240">
         </div>
         <div class="article-card-body">
           <div class="article-card-meta">
@@ -342,7 +391,7 @@
           <p>Olive, tournesol, coco, colza… chaque huile a ses spécificités nutritionnelles et culinaires. Notre guide pour faire les bons choix selon vos usages.</p>
           <a href="#" class="article-read-more">
             En savoir plus
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
       </article>
@@ -350,101 +399,125 @@
   </div>
 </section>
 
-<!-- ===== ASTUCES ===== -->
+<!-- ===== SECTION ASTUCES ===== -->
 <section class="section section-dark" id="astuces" aria-labelledby="astuces-title">
   <div class="container">
     <div class="section-header" data-animate>
       <div>
         <h2 class="section-title" id="astuces-title">Astuces de Chefs</h2>
-        <p class="section-subtitle">Profitez de nos conseils pratiques et astuces de chefs pour améliorer votre cuisine au quotidien.</p>
+        <p class="section-subtitle">Profitez des astuces de chefs et conseils pratiques pour améliorer votre cuisine et faciliter votre quotidien culinaire.</p>
       </div>
-      <a href="#" class="btn btn-white">Découvrez nos astuces</a>
+      <a href="#" class="btn btn-white">Découvrir les astuces cuisine</a>
     </div>
     <div class="articles-grid">
-      <article class="article-card" style="background:#012530;" data-animate>
+      <article class="article-card article-card-dark" data-animate>
         <div class="article-card-img">
-          <img src="assets/images/astuces-chef.jpg" alt="Astuce pour des pâtes parfaites" loading="lazy" width="380" height="240">
+          <img src="assets/images/astuces-chef.jpg"
+               alt="Astuce de chef pour des pâtes al dente parfaites"
+               loading="lazy"
+               width="380"
+               height="240">
         </div>
         <div class="article-card-body">
           <div class="article-card-meta">
             <span class="tag tag-primary">Cuisson</span>
-            <time datetime="2026-05-16" style="color:rgba(255,255,255,0.5);">16 mai 2026</time>
+            <time datetime="2026-05-16">16 mai 2026</time>
           </div>
-          <h3 style="color:#fff;">5 astuces infaillibles pour des pâtes al dente parfaites à chaque fois</h3>
-          <p style="color:rgba(255,255,255,0.65);">La quantité d'eau, le sel, le temps de cuisson… les pros partagent leurs secrets pour réussir vos pâtes comme un chef italien.</p>
-          <a href="#" class="article-read-more">Lire l'astuce <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <h3>5 astuces infaillibles pour des pâtes al dente parfaites à chaque fois</h3>
+          <p>La quantité d'eau, le sel, le temps de cuisson… les pros partagent leurs secrets pour réussir vos pâtes comme un chef italien.</p>
+          <a href="#" class="article-read-more">
+            Lire l'astuce
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
         </div>
       </article>
-      <article class="article-card" style="background:#012530;" data-animate>
+      <article class="article-card article-card-dark" data-animate>
         <div class="article-card-img">
-          <img src="assets/images/article-3.jpg" alt="Conservation des herbes fraîches" loading="lazy" width="380" height="240">
+          <img src="assets/images/astuces-cuisine.jpg"
+               alt="Conservation des herbes fraîches au réfrigérateur"
+               loading="lazy"
+               width="380"
+               height="240">
         </div>
         <div class="article-card-body">
           <div class="article-card-meta">
             <span class="tag tag-green">Conservation</span>
-            <time datetime="2026-05-14" style="color:rgba(255,255,255,0.5);">14 mai 2026</time>
+            <time datetime="2026-05-14">14 mai 2026</time>
           </div>
-          <h3 style="color:#fff;">Comment conserver vos herbes fraîches jusqu'à 2 semaines au réfrigérateur</h3>
-          <p style="color:rgba(255,255,255,0.65);">Persil, coriandre, basilic… avec ces quelques gestes simples, vos herbes aromatiques resteront fraîches et parfumées bien plus longtemps.</p>
-          <a href="#" class="article-read-more">Lire l'astuce <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <h3>Comment conserver vos herbes fraîches jusqu'à 2 semaines au réfrigérateur</h3>
+          <p>Persil, coriandre, basilic… avec ces quelques gestes simples, vos herbes aromatiques resteront fraîches et parfumées bien plus longtemps.</p>
+          <a href="#" class="article-read-more">
+            Lire l'astuce
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
         </div>
       </article>
-      <article class="article-card" style="background:#012530;" data-animate>
+      <article class="article-card article-card-dark" data-animate>
         <div class="article-card-img">
-          <img src="assets/images/article-1.jpg" alt="Couteaux de cuisine entretien" loading="lazy" width="380" height="240">
+          <img src="assets/images/article-6.jpg"
+               alt="Entretien et affûtage des couteaux de cuisine"
+               loading="lazy"
+               width="380"
+               height="240">
         </div>
         <div class="article-card-body">
           <div class="article-card-meta">
             <span class="tag tag-blue">Équipement</span>
-            <time datetime="2026-05-11" style="color:rgba(255,255,255,0.5);">11 mai 2026</time>
+            <time datetime="2026-05-11">11 mai 2026</time>
           </div>
-          <h3 style="color:#fff;">Entretenir et affûter ses couteaux de cuisine : le guide du débutant</h3>
-          <p style="color:rgba(255,255,255,0.65);">Un bon couteau bien affûté est la base de toute bonne cuisine. Suivez nos conseils pour entretenir vos couteaux et prolonger leur durée de vie.</p>
-          <a href="#" class="article-read-more">Lire l'astuce <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <h3>Entretenir et affûter ses couteaux de cuisine : le guide du débutant</h3>
+          <p>Un bon couteau bien affûté est la base de toute bonne cuisine. Suivez nos conseils pour entretenir vos couteaux et prolonger leur durée de vie.</p>
+          <a href="#" class="article-read-more">
+            Lire l'astuce
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ===== NEWSLETTER ===== -->
+<!-- ===== SECTION NEWSLETTER ===== -->
 <section class="newsletter" id="newsletter" aria-labelledby="newsletter-title">
   <div class="container">
     <div class="newsletter-box" data-animate>
+      <!-- Contenu gauche -->
       <div class="newsletter-content">
         <h2 id="newsletter-title">Recevez nos meilleures recettes chaque matin</h2>
-        <p>Inscrivez-vous à notre newsletter pour recevoir chaque jour nos meilleures recettes, astuces et actualités food directement dans votre boîte mail.</p>
-        <div class="newsletter-perks">
-          <div class="newsletter-perk">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        <p>Inscrivez-vous à notre newsletter pour recevoir chaque jour nos meilleures recettes, astuces et actualités directement dans votre boîte mail.</p>
+        <div class="newsletter-perks" role="list">
+          <div class="newsletter-perk" role="listitem">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
             1 recette exclusive par jour
           </div>
-          <div class="newsletter-perk">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <div class="newsletter-perk" role="listitem">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
             Les astuces du moment
           </div>
-          <div class="newsletter-perk">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <div class="newsletter-perk" role="listitem">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
             Les actualités food en avant-première
           </div>
-          <div class="newsletter-perk">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <div class="newsletter-perk" role="listitem">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
             Désabonnement en 1 clic, données non partagées
           </div>
         </div>
       </div>
+
+      <!-- Formulaire droite -->
       <div class="newsletter-form">
         <h3>Rejoignez 50 000 gourmands !</h3>
-        <form id="newsletterForm" novalidate>
+        <form id="newsletterForm" novalidate aria-label="Formulaire d'inscription à la newsletter">
           <div class="form-group">
-            <input type="text" class="form-input" placeholder="Votre prénom" autocomplete="given-name">
-            <input type="email" class="form-input" placeholder="Votre adresse email" required autocomplete="email">
+            <input type="text" class="form-input" placeholder="Votre prénom" autocomplete="given-name" aria-label="Votre prénom">
+            <input type="email" class="form-input" placeholder="Votre adresse email" required autocomplete="email" aria-label="Votre adresse email" aria-required="true">
           </div>
           <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-bottom:14px;">
             S'abonner à la newsletter
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
           </button>
-          <p class="form-consent">En vous inscrivant, vous acceptez de recevoir nos emails. Vos données ne sont pas partagées. Vous pouvez vous désabonner à tout moment.</p>
+          <p class="form-consent">En vous inscrivant, vous acceptez de recevoir nos emails. Vos données ne sont pas partagées avec des tiers. Vous pouvez vous désabonner à tout moment.</p>
         </form>
       </div>
     </div>
@@ -452,31 +525,32 @@
 </section>
 
 <!-- ===== FOOTER ===== -->
-<footer class="footer" aria-label="Pied de page">
+<footer class="footer" role="contentinfo" aria-label="Pied de page">
   <div class="footer-main">
     <div class="container">
       <div class="footer-grid">
-        <!-- Brand -->
+        <!-- Marque -->
         <div class="footer-brand">
-          <a href="/" class="footer-logo" aria-label="Pizza Di Muro">
-            <img src="assets/images/logo.png" alt="Pizza Di Muro" width="160" height="42">
+          <a href="/" class="footer-logo" aria-label="Pizza Di Muro – Accueil">
+            <img src="assets/images/logo.png" alt="Pizza Di Muro" width="160" height="42" loading="lazy">
           </a>
           <p>Pizza Di Muro est votre magazine food quotidien : recettes faciles, astuces de chefs, décryptages d'aliments et actualités pour mieux manger.</p>
-          <div class="footer-social" aria-label="Nos réseaux sociaux">
-            <a href="#" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          <div class="footer-social" aria-label="Suivez-nous sur les réseaux sociaux">
+            <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
             </a>
-            <a href="#" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
             </a>
-            <a href="#" aria-label="YouTube">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="rgba(0,23,30,1)"/></svg>
+            <a href="https://youtube.com" aria-label="YouTube" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#000d11"/></svg>
             </a>
-            <a href="#" aria-label="TikTok">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.89a8.28 8.28 0 0 0 4.84 1.55V7a4.85 4.85 0 0 1-1.07-.31z"/></svg>
+            <a href="https://tiktok.com" aria-label="TikTok" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.89a8.28 8.28 0 0 0 4.84 1.55V7a4.85 4.85 0 0 1-1.07-.31z"/></svg>
             </a>
           </div>
         </div>
+
         <!-- Catégories -->
         <div class="footer-col">
           <h4>Catégories</h4>
@@ -489,6 +563,7 @@
             <li><a href="#">Gastronomie</a></li>
           </ul>
         </div>
+
         <!-- Recettes populaires -->
         <div class="footer-col">
           <h4>Recettes populaires</h4>
@@ -501,6 +576,7 @@
             <li><a href="#">Ratatouille</a></li>
           </ul>
         </div>
+
         <!-- À propos -->
         <div class="footer-col">
           <h4>À propos</h4>
@@ -516,7 +592,8 @@
       </div>
     </div>
   </div>
-  <!-- Footer bottom -->
+
+  <!-- Bas de footer -->
   <div class="footer-bottom">
     <div class="container">
       <div class="footer-bottom-inner">
@@ -532,15 +609,15 @@
   </div>
 </footer>
 
-<!-- ===== SEARCH OVERLAY ===== -->
-<div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Recherche">
+<!-- ===== OVERLAY RECHERCHE ===== -->
+<div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Recherche sur le site">
   <div class="search-box">
     <button class="search-close" id="searchClose" aria-label="Fermer la recherche">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
     </button>
     <div class="search-input-wrap">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      <input type="search" id="searchInput" placeholder="Rechercher une recette, un aliment…" autocomplete="off">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" id="searchInput" placeholder="Rechercher une recette, un aliment…" autocomplete="off" aria-label="Rechercher sur le site">
     </div>
     <div class="search-suggestions">
       <h4>Recherches populaires</h4>
@@ -557,14 +634,14 @@
   </div>
 </div>
 
-<!-- ===== BACK TO TOP ===== -->
-<button class="back-to-top" id="backToTop" aria-label="Revenir en haut">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+<!-- ===== BOUTON RETOUR EN HAUT ===== -->
+<button class="back-to-top" id="backToTop" aria-label="Revenir en haut de la page">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
 </button>
 
-<!-- ===== TOAST NOTIFICATION ===== -->
-<div class="toast" id="toast" role="status" aria-live="polite">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+<!-- ===== NOTIFICATION TOAST ===== -->
+<div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
   <span class="toast-msg"></span>
 </div>
 
