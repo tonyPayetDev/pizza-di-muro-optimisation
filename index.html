@@ -1,920 +1,574 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pizza Di Muro : Recettes, astuces cuisine et actualités food au quotidien</title>
-  <meta name="description" content="Découvrez des recettes faciles, astuces de chefs, décryptages d'aliments et actualités food pour mieux manger chaque jour." />
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="Pizza Di Muro" />
-  <link rel="canonical" href="https://pizza-dimuro.fr/" />
-
-  <!-- Open Graph -->
-  <meta property="og:type"        content="website" />
-  <meta property="og:title"       content="Pizza Di Muro : Recettes, astuces cuisine et actualités food au quotidien" />
-  <meta property="og:description" content="Découvrez des recettes simples, astuces de chefs, décryptages d'aliments et actualités food pour mieux manger chaque jour." />
-  <meta property="og:url"         content="https://pizza-dimuro.fr/" />
-  <meta property="og:image"       content="assets/images/burek.jpg" />
-  <meta property="og:locale"      content="fr_FR" />
-  <meta property="og:site_name"   content="Pizza Di Muro" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card"        content="summary_large_image" />
-  <meta name="twitter:title"       content="Pizza Di Muro : Recettes faciles, astuces cuisine" />
-  <meta name="twitter:description" content="Découvrez des recettes simples, astuces de chefs et actualités food." />
-  <meta name="twitter:image"       content="assets/images/burek.jpg" />
-
-  <!-- Favicon placeholder (inline SVG) -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23e12c2c'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='20' font-family='serif'>🍕</text></svg>" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Di Muro : Recettes faciles, astuces cuisine et actualités food au quotidien</title>
+  <meta name="description" content="Découvrez Pizza Di Muro, votre source quotidienne de recettes simples, astuces culinaires de chefs, décryptages d'aliments et actualités food pour mieux manger.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Pizza Di Muro : Recettes faciles, astuces cuisine et actualités food au quotidien">
+  <meta property="og:description" content="Découvrez Pizza Di Muro, votre source quotidienne de recettes simples, astuces culinaires de chefs, décryptages d'aliments et actualités food.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero-pizza.jpg">
+  <meta name="theme-color" content="#e12c2c">
+  <link rel="canonical" href="https://pizza-dimuro.fr/">
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css" />
-
-  <!-- Schema.org structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Pizza Di Muro",
-    "url": "https://pizza-dimuro.fr/",
-    "description": "Recettes faciles, astuces cuisine et actualités food au quotidien",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://pizza-dimuro.fr/?s={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  <!-- =====================================================
-       TOP BAR
-       ===================================================== -->
-  <div class="top-bar" role="complementary" aria-label="Barre d'information">
-    <div class="container top-bar-inner">
-      <span class="top-bar-links">
-        📅 <strong>Mardi 19 mai 2026</strong> &nbsp;|&nbsp;
-        <a href="#newsletter">Newsletter gratuite</a> &nbsp;|&nbsp;
-        <a href="#actualites">Dernières actualités</a>
-      </span>
-      <div class="top-bar-social">
-        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+<!-- ===== HEADER ===== -->
+<header class="header">
+  <!-- Top bar -->
+  <div class="header-top">
+    <div class="container">
+      <span class="header-top-text">Votre magazine food du quotidien &mdash; Recettes, astuces et actualités</span>
+      <div class="social-links">
+        <!-- Facebook -->
+        <a href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
         </a>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        <!-- Instagram -->
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         </a>
-        <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.4 19.54C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 001.94-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+        <!-- YouTube -->
+        <a href="#" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
         </a>
-        <a href="https://www.pinterest.fr/" target="_blank" rel="noopener" aria-label="Pinterest">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+        <!-- TikTok -->
+        <a href="#" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.89a8.28 8.28 0 0 0 4.84 1.55V7a4.85 4.85 0 0 1-1.07-.31z"/></svg>
         </a>
       </div>
     </div>
   </div>
-
-  <!-- =====================================================
-       HEADER
-       ===================================================== -->
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
-
-      <a href="/" class="logo-link" aria-label="Pizza Di Muro - Accueil">
-        <img src="assets/images/logo.png" alt="Pizza Di Muro" class="site-logo" width="160" height="48" />
-      </a>
-
-      <nav class="main-nav" id="mainNav" role="navigation" aria-label="Navigation principale">
-        <a href="#actualites" class="nav-link" aria-label="Actualités culinaires">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h16a2 2 0 002-2V4a2 2 0 00-2-2H8a2 2 0 00-2 2v16a2 2 0 01-2 2zm0 0a2 2 0 01-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8M15 18h-5M10 6h8v4h-8z"/></svg>
-          Actualités
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="/" class="logo" aria-label="Pizza Di Muro - Accueil">
+          <img src="assets/images/logo.png" alt="Pizza Di Muro" width="160" height="46">
         </a>
-        <a href="#recettes" class="nav-link" aria-label="Recettes gourmandes">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 002-2V2"/><path d="M7 2v20M21 15V2v0a5 5 0 00-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg>
-          Recettes
-        </a>
-        <a href="#aliments" class="nav-link" aria-label="Aliments et nutrition">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-          Aliments
-        </a>
-        <a href="#astuces" class="nav-link" aria-label="Astuces de cuisine">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-          Astuces
-        </a>
-      </nav>
-
-      <div class="header-cta">
-        <a href="#newsletter" class="btn btn-primary" aria-label="S'abonner à la newsletter">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          Newsletter
-        </a>
+        <ul class="nav-links" role="navigation" aria-label="Navigation principale">
+          <li><a href="#actualites">Actualités</a></li>
+          <li><a href="#recettes">Recettes</a></li>
+          <li><a href="#aliments">Aliments</a></li>
+          <li><a href="#astuces">Astuces</a></li>
+        </ul>
+        <div class="nav-right">
+          <button class="search-btn" id="searchBtn" aria-label="Rechercher">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+          <a href="#newsletter" class="btn btn-primary">Newsletter</a>
+          <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
       </div>
-
-      <button class="nav-toggle" id="navToggle" aria-controls="mainNav" aria-expanded="false" aria-label="Ouvrir le menu">
-        <span></span><span></span><span></span>
-      </button>
-
     </div>
-  </header>
+  </nav>
+</header>
 
-  <main id="main-content">
+<!-- ===== MOBILE MENU ===== -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu mobile">
+  <div class="mobile-menu-header">
+    <a href="/" class="logo">
+      <img src="assets/images/logo.png" alt="Pizza Di Muro" height="40">
+    </a>
+    <button class="mobile-close" id="mobileClose" aria-label="Fermer le menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-nav-links" aria-label="Navigation mobile">
+    <a href="#actualites">Actualités</a>
+    <a href="#recettes">Recettes</a>
+    <a href="#aliments">Aliments</a>
+    <a href="#astuces">Astuces</a>
+    <a href="#newsletter">Newsletter</a>
+  </nav>
+</div>
 
-    <!-- =====================================================
-         HERO
-         ===================================================== -->
-    <section class="hero" aria-labelledby="hero-heading">
-      <div class="container">
-        <div class="hero-grid">
-
-          <!-- Left: Text -->
-          <div class="hero-text">
-            <div class="hero-eyebrow fade-in-up">
-              <span class="tag">🍕 Le mag food du quotidien</span>
-              <span class="hero-eyebrow-line" aria-hidden="true"></span>
-            </div>
-            <h1 id="hero-heading" class="fade-in-up delay-1">
-              Pizza Di Muro : Recettes, astuces cuisine et actualités food au quotidien
-            </h1>
-            <p class="hero-lead fade-in-up delay-2">
-              Découvrez des recettes faciles, astuces de chefs, décryptages d'aliments et actualités food pour mieux manger chaque jour.
-            </p>
-            <div class="hero-actions fade-in-up delay-3">
-              <a href="#recettes" class="btn btn-primary">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 002-2V2"/><path d="M7 2v20M21 15V2a5 5 0 00-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg>
-                Voir les recettes
-              </a>
-              <a href="#actualites" class="btn btn-ghost">
-                Actualités food
-              </a>
-            </div>
-            <div class="hero-stats fade-in-up delay-3">
-              <div>
-                <div class="hero-stat-number">500+</div>
-                <div class="hero-stat-label">Recettes publiées</div>
-              </div>
-              <div>
-                <div class="hero-stat-number">4</div>
-                <div class="hero-stat-label">Catégories thématiques</div>
-              </div>
-              <div>
-                <div class="hero-stat-number">100%</div>
-                <div class="hero-stat-label">Contenu gratuit</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right: Visual cards -->
-          <div class="hero-visual fade-in-up delay-2" aria-hidden="true">
-            <a href="#actualites" class="hero-featured-card">
-              <img
-                src="assets/images/burek.jpg"
-                alt="Burek, la pâtisserie salée des Balkans"
-                class="hero-card-img"
-                width="600"
-                height="280"
-              />
-              <div class="hero-card-body">
-                <span class="tag">Tendance</span>
-                <h3>Burek : la pâtisserie salée des Balkans qui conquiert les tables françaises</h3>
-                <p>Cette pâtisserie feuilletée originaire des Balkans s'invite de plus en plus dans les cuisines françaises avec ses garnitures savoureuses.</p>
-              </div>
-            </a>
-            <div class="hero-mini-cards">
-              <a href="#recettes" class="hero-mini-card">
-                <img src="assets/images/gratin.jpg" alt="Gratin de pommes de terre" class="hero-mini-img" loading="lazy" width="300" height="80" />
-                <div class="hero-mini-label">Gratin familial au four</div>
-              </a>
-              <a href="#aliments" class="hero-mini-card">
-                <img src="assets/images/asperges.jpg" alt="Asperges vertes" class="hero-mini-img" loading="lazy" width="300" height="80" />
-                <div class="hero-mini-label">Bienfaits des asperges</div>
-              </a>
-            </div>
-          </div>
-
+<!-- ===== HERO ===== -->
+<section class="hero" aria-label="Bannière principale">
+  <div class="hero-bg" role="img" aria-label="Pizza délicieuse"></div>
+  <div class="container">
+    <div class="hero-row">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Magazine Food &bull; Mis à jour chaque jour
         </div>
-      </div>
-    </section>
-
-    <!-- =====================================================
-         ACTUALITÉS CULINAIRES
-         ===================================================== -->
-    <section class="section" id="actualites" aria-labelledby="actualites-heading">
-      <div class="container">
-
-        <div class="section-header reveal">
-          <h2 id="actualites-heading">Actualités culinaires</h2>
-          <a href="#actualites" class="btn btn-outline">
-            Explorez nos articles d'actualité
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+        <h1>Pizza Di Muro : <span>Recettes faciles,</span> astuces cuisine et actualités food au quotidien</h1>
+        <p class="hero-desc">Découvrez nos recettes simples et savoureuses, les conseils de nos chefs, les décryptages d'aliments et toutes les actualités food pour mieux manger chaque jour.</p>
+        <div class="hero-actions">
+          <a href="#recettes" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+            Explorer les recettes
+          </a>
+          <a href="#newsletter" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.5);">
+            S'abonner gratuitement
           </a>
         </div>
-
-        <p class="reveal" style="color:var(--gray-600);margin-bottom:2rem;max-width:600px">
-          Retrouvez les dernières actualités culinaires, tendances food et conseils pour une alimentation saine et gourmande.
-        </p>
-
-        <div class="actualites-layout">
-
-          <!-- Main articles -->
-          <div class="actualites-main">
-
-            <article class="article-card-horizontal reveal">
-              <img
-                src="assets/images/burek.jpg"
-                alt="Burek, pâtisserie salée des Balkans"
-                class="h-card-img"
-                loading="lazy"
-                width="200"
-                height="160"
-              />
-              <div class="h-card-body">
-                <span class="tag">Tendance</span>
-                <h3 class="h-card-title">Burek : la pâtisserie salée des Balkans qui conquiert les tables françaises</h3>
-                <p class="h-card-excerpt">
-                  Cette pâtisserie roulée à la pâte étirée à la main — garnie de viande hachée, fromage frais ou épinards — séduit de plus en plus les amateurs de cuisine du monde en France.
-                </p>
-                <div class="h-card-meta">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                  <time datetime="2026-03-20">20 mars 2026</time>
-                  <span>·</span>
-                  <span>5 min de lecture</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="article-card-horizontal reveal">
-              <img
-                src="assets/images/cuisine-normande.jpg"
-                alt="La renaissance culinaire normande"
-                class="h-card-img"
-                loading="lazy"
-                width="200"
-                height="160"
-              />
-              <div class="h-card-body">
-                <span class="tag tag-navy">Documentaire</span>
-                <h3 class="h-card-title">Cuisine normande : un documentaire télévisé retrace sa renaissance et ses chefs engagés</h3>
-                <p class="h-card-excerpt">
-                  Un film de 52 minutes sur France 5 explore comment dix-huit artisans normands réinventent le camembert, les huîtres et les plats traditionnels de leur région.
-                </p>
-                <div class="h-card-meta">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                  <time datetime="2026-03-18">18 mars 2026</time>
-                  <span>·</span>
-                  <span>4 min de lecture</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="article-card-horizontal reveal">
-              <img
-                src="assets/images/fraisiers.jpg"
-                alt="Marc de café pour les fraisiers"
-                class="h-card-img"
-                loading="lazy"
-                width="200"
-                height="160"
-              />
-              <div class="h-card-body">
-                <span class="tag tag-green">Conseil jardin</span>
-                <h3 class="h-card-title">Fraisiers : cet ingrédient de cuisine courant favorise des fruits plus gros dès le printemps</h3>
-                <p class="h-card-excerpt">
-                  Le marc de café en infusion soutient la croissance des fraisiers au printemps. Découvrez la méthode, la fréquence d'application et les erreurs à éviter.
-                </p>
-                <div class="h-card-meta">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                  <time datetime="2026-03-15">15 mars 2026</time>
-                  <span>·</span>
-                  <span>3 min de lecture</span>
-                </div>
-              </div>
-            </article>
-
-          </div>
-
-          <!-- Sidebar -->
-          <aside class="actualites-sidebar" aria-label="Articles populaires">
-
-            <div class="sidebar-widget reveal">
-              <div class="widget-header">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-                Tendances du moment
-              </div>
-              <ol class="trending-list" aria-label="Articles tendances">
-                <li class="trending-item">
-                  <span class="trending-num" aria-hidden="true">01</span>
-                  <span class="trending-title">Gigot d'agneau aux flageolets : le classique de Pâques expliqué</span>
-                </li>
-                <li class="trending-item">
-                  <span class="trending-num" aria-hidden="true">02</span>
-                  <span class="trending-title">Tarte aux fruits : l'astuce des grand-mères pour une pâte croustillante</span>
-                </li>
-                <li class="trending-item">
-                  <span class="trending-num" aria-hidden="true">03</span>
-                  <span class="trending-title">Asperges vertes : pourquoi ce légume est idéal au printemps</span>
-                </li>
-                <li class="trending-item">
-                  <span class="trending-num" aria-hidden="true">04</span>
-                  <span class="trending-title">Burek : la pâtisserie salée des Balkans en France</span>
-                </li>
-                <li class="trending-item">
-                  <span class="trending-num" aria-hidden="true">05</span>
-                  <span class="trending-title">Gratin de pommes de terre : recette familiale en 45 minutes</span>
-                </li>
-              </ol>
-            </div>
-
-            <div class="sidebar-widget reveal">
-              <div class="widget-header">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-                Catégories populaires
-              </div>
-              <div style="padding:1rem 1.25rem;display:flex;flex-direction:column;gap:.6rem;">
-                <a href="#actualites" style="display:flex;justify-content:space-between;align-items:center;padding:.5rem .75rem;background:var(--gray-50);border-radius:6px;font-size:.875rem;font-weight:600;color:var(--gray-800);transition:all .2s;" class="footer-link">
-                  Actualités culinaires
-                  <span style="background:var(--red);color:white;border-radius:100px;padding:.1rem .5rem;font-size:.72rem;font-weight:700;">48</span>
-                </a>
-                <a href="#recettes" style="display:flex;justify-content:space-between;align-items:center;padding:.5rem .75rem;background:var(--gray-50);border-radius:6px;font-size:.875rem;font-weight:600;color:var(--gray-800);transition:all .2s;" class="footer-link">
-                  Recettes gourmandes
-                  <span style="background:var(--red);color:white;border-radius:100px;padding:.1rem .5rem;font-size:.72rem;font-weight:700;">124</span>
-                </a>
-                <a href="#aliments" style="display:flex;justify-content:space-between;align-items:center;padding:.5rem .75rem;background:var(--gray-50);border-radius:6px;font-size:.875rem;font-weight:600;color:var(--gray-800);transition:all .2s;" class="footer-link">
-                  Aliments &amp; Nutrition
-                  <span style="background:var(--red);color:white;border-radius:100px;padding:.1rem .5rem;font-size:.72rem;font-weight:700;">86</span>
-                </a>
-                <a href="#astuces" style="display:flex;justify-content:space-between;align-items:center;padding:.5rem .75rem;background:var(--gray-50);border-radius:6px;font-size:.875rem;font-weight:600;color:var(--gray-800);transition:all .2s;" class="footer-link">
-                  Astuces de cuisine
-                  <span style="background:var(--red);color:white;border-radius:100px;padding:.1rem .5rem;font-size:.72rem;font-weight:700;">73</span>
-                </a>
-              </div>
-            </div>
-
-          </aside>
+      </div>
+      <div class="hero-stats" aria-label="Chiffres clés">
+        <div class="hero-stat">
+          <div class="number">500+</div>
+          <div class="label">Recettes</div>
+        </div>
+        <div class="hero-stat">
+          <div class="number">200+</div>
+          <div class="label">Astuces</div>
+        </div>
+        <div class="hero-stat">
+          <div class="number">50k+</div>
+          <div class="label">Lecteurs</div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- =====================================================
-         RECETTES GOURMANDES
-         ===================================================== -->
-    <section class="section section-alt" id="recettes" aria-labelledby="recettes-heading">
-      <div class="container">
+<!-- ===== TRENDING BAR ===== -->
+<div class="trending-bar" aria-label="Articles tendance">
+  <div class="container">
+    <div class="trending-inner">
+      <span class="trending-label">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        Tendances
+      </span>
+      <div class="trending-scroll">
+        <a href="#recettes">Gigot d'agneau aux herbes</a>
+        <a href="#actualites">Prix des œufs en 2026</a>
+        <a href="#aliments">Les bienfaits des asperges</a>
+        <a href="#astuces">5 astuces pour des pâtes parfaites</a>
+        <a href="#recettes">Gratin dauphinois crémeux</a>
+        <a href="#aliments">Fruits les plus contaminés</a>
+      </div>
+    </div>
+  </div>
+</div>
 
-        <div class="section-header reveal">
-          <h2 id="recettes-heading">Recettes gourmandes</h2>
-          <a href="#recettes" class="btn btn-outline">
-            Voir toutes les recettes
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+<!-- ===== ACTUALITÉS ===== -->
+<section class="section" id="actualites" aria-labelledby="actualites-title">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <div>
+        <h2 class="section-title" id="actualites-title">Actualités Food</h2>
+        <p class="section-subtitle">Restez informé des dernières tendances et nouveautés culinaires avec nos articles d'actualité sélectionnés.</p>
+      </div>
+      <a href="#" class="btn btn-outline">Découvrez nos actualités</a>
+    </div>
+
+    <!-- Article à la une -->
+    <div class="featured-grid" data-animate>
+      <article class="featured-main">
+        <img src="assets/images/actualites-food.jpg"
+             alt="Actualité food : tendances culinaires 2026"
+             loading="lazy" width="760" height="480">
+        <div class="featured-overlay">
+          <span class="tag tag-primary">À la une</span>
+          <h2>Pourquoi le prix des œufs explose en 2026 : tout ce qu'il faut savoir</h2>
+          <p>La grippe aviaire et les nouvelles réglementations sur le bien-être animal font grimper les prix. On vous explique tout et on vous donne nos astuces pour adapter vos recettes.</p>
+          <a href="#" class="btn btn-white" style="align-self:flex-start;">
+            Lire l'article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
-
-        <p class="reveal" style="color:var(--gray-600);margin-bottom:1.75rem;max-width:600px">
-          Découvrez des recettes simples et savoureuses pour tous les goûts, du classique au moderne, pour régaler toute la famille.
-        </p>
-
-        <div class="recettes-tabs reveal" role="tablist" aria-label="Filtres de recettes">
-          <button class="tab-btn active" role="tab" aria-selected="true">Toutes</button>
-          <button class="tab-btn" role="tab" aria-selected="false">Plats principaux</button>
-          <button class="tab-btn" role="tab" aria-selected="false">Desserts</button>
-          <button class="tab-btn" role="tab" aria-selected="false">Entrées</button>
-          <button class="tab-btn" role="tab" aria-selected="false">Végétarien</button>
-        </div>
-
-        <div class="card-grid card-grid-3">
-
-          <!-- Featured recipe -->
-          <article class="article-card card-featured reveal">
-            <div class="card-img-wrap">
-              <img
-                src="assets/images/gratin.jpg"
-                alt="Gratin de pommes de terre au four"
-                class="card-img"
-                loading="lazy"
-                width="768"
-                height="512"
-              />
-              <span class="tag">⭐ En vedette</span>
-            </div>
-            <div class="card-body">
-              <div class="card-meta">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                <span>45 min</span>
-                <span>·</span>
-                <span>Facile</span>
-                <span>·</span>
-                <span>4 personnes</span>
-              </div>
-              <h3 class="card-title">Gratin de pommes de terre au four : la recette familiale facile prête en 45 minutes</h3>
-              <p class="card-excerpt">
-                Un gratin réconfortant avec pommes de terre, champignons, jambon et œufs. Simple à préparer, idéal pour un dîner en famille sans prise de tête.
-              </p>
-              <div class="card-footer">
-                <span class="card-read-more">
-                  Voir la recette
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
-                </span>
-                <div style="display:flex;align-items:center;gap:.4rem;font-size:.78rem;color:var(--gray-400)">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-                  4.8/5
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="article-card reveal">
-            <div class="card-img-wrap">
-              <img
-                src="assets/images/gigot-agneau.jpg"
-                alt="Gigot d'agneau aux flageolets"
-                class="card-img"
-                loading="lazy"
-                width="768"
-                height="512"
-              />
-              <span class="tag tag-amber">Tradition</span>
-            </div>
-            <div class="card-body">
-              <div class="card-meta">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                <span>2h30</span>
-                <span>·</span>
-                <span>Intermédiaire</span>
-              </div>
-              <h3 class="card-title">Gigot d'agneau aux flageolets : le classique de Pâques, un accord culinaire parfait</h3>
-              <p class="card-excerpt">Pourquoi l'agneau rôti s'associe si bien aux flageolets ? Histoire et recette de ce duo iconique de la cuisine française.</p>
-              <div class="card-footer">
-                <span class="card-read-more">
-                  Voir la recette
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
-                </span>
-              </div>
-            </div>
-          </article>
-
-          <article class="article-card reveal">
-            <div class="card-img-wrap">
-              <img
-                src="assets/images/tarte.jpg"
-                alt="Tarte aux fruits dorée"
-                class="card-img"
-                loading="lazy"
-                width="768"
-                height="512"
-              />
-              <span class="tag tag-green">Dessert</span>
-            </div>
-            <div class="card-body">
-              <div class="card-meta">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                <span>1h</span>
-                <span>·</span>
-                <span>Facile</span>
-              </div>
-              <h3 class="card-title">Tarte aux fruits : l'ingrédient secret des grand-mères pour une pâte croustillante</h3>
-              <p class="card-excerpt">La semoule fine saupoudrée sur la pâte avant les fruits absorbe l'humidité et garantit un fond parfaitement croustillant. La recette complète.</p>
-              <div class="card-footer">
-                <span class="card-read-more">
-                  Voir la recette
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
-                </span>
-              </div>
-            </div>
-          </article>
-
-        </div>
+      </article>
+      <div class="featured-sidebar">
+        <article class="featured-sidebar-item">
+          <img src="assets/images/article-1.jpg" alt="Fruits et légumes contaminés" loading="lazy" width="100" height="90">
+          <div class="sidebar-item-body">
+            <span class="tag tag-green">Santé</span>
+            <h3>Les 6 fruits et légumes les plus contaminés en pesticides en 2026</h3>
+            <time datetime="2026-05-15">15 mai 2026</time>
+          </div>
+        </article>
+        <article class="featured-sidebar-item">
+          <img src="assets/images/article-2.jpg" alt="Tendances food 2026" loading="lazy" width="100" height="90">
+          <div class="sidebar-item-body">
+            <span class="tag tag-orange">Tendances</span>
+            <h3>Les grandes tendances culinaires qui transforment nos assiettes</h3>
+            <time datetime="2026-05-12">12 mai 2026</time>
+          </div>
+        </article>
+        <article class="featured-sidebar-item">
+          <img src="assets/images/article-3.jpg" alt="Marché alimentaire local" loading="lazy" width="100" height="90">
+          <div class="sidebar-item-body">
+            <span class="tag tag-blue">Marché</span>
+            <h3>Les marchés locaux reprennent du poil de la bête après la crise</h3>
+            <time datetime="2026-05-10">10 mai 2026</time>
+          </div>
+        </article>
+        <article class="featured-sidebar-item">
+          <img src="assets/images/article-4.jpg" alt="Restaurants étoilés" loading="lazy" width="100" height="90">
+          <div class="sidebar-item-body">
+            <span class="tag tag-primary">Gastronomie</span>
+            <h3>Guide Michelin : les nouveaux étoilés qui font parler d'eux</h3>
+            <time datetime="2026-05-08">8 mai 2026</time>
+          </div>
+        </article>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- =====================================================
-         ALIMENTS ET NUTRITION
-         ===================================================== -->
-    <section class="section" id="aliments" aria-labelledby="aliments-heading">
-      <div class="container">
-
-        <div class="section-header reveal">
-          <h2 id="aliments-heading">Aliments et nutrition</h2>
-          <a href="#aliments" class="btn btn-outline">
-            En savoir plus sur les aliments
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+<!-- ===== RECETTES ===== -->
+<section class="section section-light" id="recettes" aria-labelledby="recettes-title">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <div>
+        <h2 class="section-title" id="recettes-title">Nos Recettes</h2>
+        <p class="section-subtitle">Explorez notre collection de recettes faciles et gourmandes pour tous les goûts et toutes les occasions.</p>
+      </div>
+      <a href="#" class="btn btn-outline">Voir toutes les recettes</a>
+    </div>
+    <div class="articles-grid">
+      <article class="article-card" data-animate>
+        <div class="article-card-img">
+          <img src="assets/images/article-5.jpg" alt="Gigot d'agneau au four" loading="lazy" width="380" height="240">
+        </div>
+        <div class="article-card-body">
+          <div class="article-card-meta">
+            <span class="tag tag-primary">Viande</span>
+            <time datetime="2026-05-14">14 mai 2026</time>
+          </div>
+          <h3>Gigot d'agneau aux flageolets : la recette familiale parfaite</h3>
+          <p>Un plat généreux et savoureux qui fait l'unanimité. Le gigot rôti lentement se marie à merveille avec les flageolets fondants et les herbes fraîches.</p>
+          <a href="#" class="article-read-more">
+            Voir la recette
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
-
-        <p class="reveal" style="color:var(--gray-600);margin-bottom:2rem;max-width:600px">
-          Apprenez à mieux connaître les aliments, leurs bienfaits et comment les utiliser au quotidien pour une alimentation équilibrée.
-        </p>
-
-        <div class="aliments-grid">
-
-          <!-- Featured -->
-          <div class="aliment-featured reveal">
-            <img
-              src="assets/images/asperges.jpg"
-              alt="Asperges vertes fraîches"
-              class="aliment-featured-img"
-              loading="lazy"
-              width="400"
-              height="260"
-            />
-            <div class="aliment-featured-body">
-              <span class="tag tag-green">Légume de saison</span>
-              <h3>Asperges vertes : pourquoi ce légume de printemps est idéal pour la santé</h3>
-              <p>À seulement 20 cal/100g, l'asperge verte concentre flavonoïdes, vitamine C et bêta-carotène. Elle soutient la santé cardiovasculaire et possède des propriétés diurétiques naturelles.</p>
-              <a href="#aliments" class="btn btn-ghost" style="font-size:.85rem;padding:.5rem 1rem;">
-                Lire l'article complet
-              </a>
-            </div>
-          </div>
-
-          <!-- List -->
-          <div class="aliments-list">
-
-            <article class="aliment-item reveal">
-              <img
-                src="assets/images/fraisiers.jpg"
-                alt="Fraisiers et marc de café"
-                class="aliment-img"
-                loading="lazy"
-                width="120"
-                height="100"
-              />
-              <div class="aliment-body">
-                <span class="tag">Conseil</span>
-                <h4>Marc de café : un allié insoupçonné pour vos fraisiers</h4>
-                <p>L'infusion de marc de café stimule la croissance et améliore la qualité des fraises dès le printemps.</p>
-              </div>
-            </article>
-
-            <article class="aliment-item reveal">
-              <img
-                src="assets/images/tarte.jpg"
-                alt="Pâte à tarte croustillante"
-                class="aliment-img"
-                loading="lazy"
-                width="120"
-                height="100"
-              />
-              <div class="aliment-body">
-                <span class="tag tag-amber">Ingredient</span>
-                <h4>Semoule fine : l'ingrédient anti-détrempe pour vos tartes</h4>
-                <p>Une couche de semoule fine protège la pâte de l'humidité des fruits juteux — une astuce de grand-mère qui fonctionne toujours.</p>
-              </div>
-            </article>
-
-            <article class="aliment-item reveal">
-              <img
-                src="assets/images/gigot-agneau.jpg"
-                alt="Flageolets verts"
-                class="aliment-img"
-                loading="lazy"
-                width="120"
-                height="100"
-              />
-              <div class="aliment-body">
-                <span class="tag tag-green">Légumineuse</span>
-                <h4>Flageolets : la légumineuse de Pâques aux multiples vertus</h4>
-                <p>Riches en protéines végétales et fibres, les flageolets absorbent parfaitement les jus de viande et se marient idéalement avec l'agneau.</p>
-              </div>
-            </article>
-
-            <article class="aliment-item reveal">
-              <img
-                src="assets/images/burek.jpg"
-                alt="Pâte feuilletée du burek"
-                class="aliment-img"
-                loading="lazy"
-                width="120"
-                height="100"
-              />
-              <div class="aliment-body">
-                <span class="tag tag-blue">Découverte</span>
-                <h4>Pâte phyllo : légère, croustillante et riche en textures</h4>
-                <p>Cette pâte ultra-fine étirée à la main est la base du burek et de nombreuses pâtisseries méditerranéennes — voici tout ce qu'il faut savoir.</p>
-              </div>
-            </article>
-
-          </div>
+      </article>
+      <article class="article-card" data-animate>
+        <div class="article-card-img">
+          <img src="assets/images/article-6.jpg" alt="Gratin dauphinois" loading="lazy" width="380" height="240">
         </div>
-      </div>
-    </section>
-
-    <!-- =====================================================
-         ASTUCES DE CUISINE
-         ===================================================== -->
-    <section class="section section-alt" id="astuces" aria-labelledby="astuces-heading">
-      <div class="container">
-
-        <div class="section-header reveal">
-          <h2 id="astuces-heading">Astuces de cuisine</h2>
-          <a href="#astuces" class="btn btn-outline">
-            Découvrir les astuces cuisine
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+        <div class="article-card-body">
+          <div class="article-card-meta">
+            <span class="tag tag-secondary">Végétarien</span>
+            <time datetime="2026-05-11">11 mai 2026</time>
+          </div>
+          <h3>Gratin dauphinois ultra-crémeux : le secret du chef</h3>
+          <p>La recette authentique du gratin dauphinois avec tous les secrets pour obtenir un résultat onctueux, doré et irrésistible à chaque fois.</p>
+          <a href="#" class="article-read-more">
+            Voir la recette
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
+      </article>
+      <article class="article-card" data-animate>
+        <div class="article-card-img">
+          <img src="assets/images/recettes-cuisine.jpg" alt="Tarte aux fruits de saison" loading="lazy" width="380" height="240">
+        </div>
+        <div class="article-card-body">
+          <div class="article-card-meta">
+            <span class="tag tag-orange">Desserts</span>
+            <time datetime="2026-05-09">9 mai 2026</time>
+          </div>
+          <h3>Tarte aux fraises maison : fraîcheur et légèreté au rendez-vous</h3>
+          <p>Profitez de la saison des fraises avec cette tarte élégante à la crème pâtissière vanillée. Une recette facile qui impressionne toujours les convives.</p>
+          <a href="#" class="article-read-more">
+            Voir la recette
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
-        <p class="reveal" style="color:var(--gray-600);margin-bottom:2rem;max-width:600px">
-          Profitez des astuces de chefs et conseils pratiques pour améliorer votre cuisine et conserver vos aliments plus longtemps.
-        </p>
+<!-- ===== ALIMENTS ===== -->
+<section class="section" id="aliments" aria-labelledby="aliments-title">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <div>
+        <h2 class="section-title" id="aliments-title">Encyclopédie des Aliments</h2>
+        <p class="section-subtitle">Apprenez tout sur les aliments, leurs bienfaits, et comment les choisir pour une alimentation saine.</p>
+      </div>
+      <a href="#" class="btn btn-outline">En savoir plus sur les aliments</a>
+    </div>
+    <div class="articles-grid">
+      <article class="article-card" data-animate>
+        <div class="article-card-img">
+          <img src="assets/images/aliments-sains.jpg" alt="Asperges fraîches du printemps" loading="lazy" width="380" height="240">
+        </div>
+        <div class="article-card-body">
+          <div class="article-card-meta">
+            <span class="tag tag-green">Légumes</span>
+            <time datetime="2026-05-13">13 mai 2026</time>
+          </div>
+          <h3>L'asperge : bienfaits nutritionnels, comment la choisir et la préparer</h3>
+          <p>Légume de printemps par excellence, l'asperge est riche en folates, vitamines et antioxydants. Découvrez tout pour la sélectionner et la cuisiner au mieux.</p>
+          <a href="#" class="article-read-more">
+            En savoir plus
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="article-card" data-animate>
+        <div class="article-card-img">
+          <img src="assets/images/article-2.jpg" alt="Fraises de saison" loading="lazy" width="380" height="240">
+        </div>
+        <div class="article-card-body">
+          <div class="article-card-meta">
+            <span class="tag tag-primary">Fruits</span>
+            <time datetime="2026-05-07">7 mai 2026</time>
+          </div>
+          <h3>La fraise : vertus santé, variétés et conservation — le guide complet</h3>
+          <p>Anti-oxydante, riche en vitamine C et en fibres, la fraise est bien plus qu'un plaisir printanier. Tout ce que vous devez savoir sur ce fruit adoré.</p>
+          <a href="#" class="article-read-more">
+            En savoir plus
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="article-card" data-animate>
+        <div class="article-card-img">
+          <img src="assets/images/article-4.jpg" alt="Huiles alimentaires" loading="lazy" width="380" height="240">
+        </div>
+        <div class="article-card-body">
+          <div class="article-card-meta">
+            <span class="tag tag-orange">Nutrition</span>
+            <time datetime="2026-05-05">5 mai 2026</time>
+          </div>
+          <h3>Quelle huile choisir pour cuisiner ? Comparatif complet des huiles</h3>
+          <p>Olive, tournesol, coco, colza… chaque huile a ses spécificités nutritionnelles et culinaires. Notre guide pour faire les bons choix selon vos usages.</p>
+          <a href="#" class="article-read-more">
+            En savoir plus
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
-        <div class="astuces-grid">
+<!-- ===== ASTUCES ===== -->
+<section class="section section-dark" id="astuces" aria-labelledby="astuces-title">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <div>
+        <h2 class="section-title" id="astuces-title">Astuces de Chefs</h2>
+        <p class="section-subtitle">Profitez de nos conseils pratiques et astuces de chefs pour améliorer votre cuisine au quotidien.</p>
+      </div>
+      <a href="#" class="btn btn-white">Découvrez nos astuces</a>
+    </div>
+    <div class="articles-grid">
+      <article class="article-card" style="background:#012530;" data-animate>
+        <div class="article-card-img">
+          <img src="assets/images/astuces-chef.jpg" alt="Astuce pour des pâtes parfaites" loading="lazy" width="380" height="240">
+        </div>
+        <div class="article-card-body">
+          <div class="article-card-meta">
+            <span class="tag tag-primary">Cuisson</span>
+            <time datetime="2026-05-16" style="color:rgba(255,255,255,0.5);">16 mai 2026</time>
+          </div>
+          <h3 style="color:#fff;">5 astuces infaillibles pour des pâtes al dente parfaites à chaque fois</h3>
+          <p style="color:rgba(255,255,255,0.65);">La quantité d'eau, le sel, le temps de cuisson… les pros partagent leurs secrets pour réussir vos pâtes comme un chef italien.</p>
+          <a href="#" class="article-read-more">Lire l'astuce <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
+      </article>
+      <article class="article-card" style="background:#012530;" data-animate>
+        <div class="article-card-img">
+          <img src="assets/images/article-3.jpg" alt="Conservation des herbes fraîches" loading="lazy" width="380" height="240">
+        </div>
+        <div class="article-card-body">
+          <div class="article-card-meta">
+            <span class="tag tag-green">Conservation</span>
+            <time datetime="2026-05-14" style="color:rgba(255,255,255,0.5);">14 mai 2026</time>
+          </div>
+          <h3 style="color:#fff;">Comment conserver vos herbes fraîches jusqu'à 2 semaines au réfrigérateur</h3>
+          <p style="color:rgba(255,255,255,0.65);">Persil, coriandre, basilic… avec ces quelques gestes simples, vos herbes aromatiques resteront fraîches et parfumées bien plus longtemps.</p>
+          <a href="#" class="article-read-more">Lire l'astuce <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
+      </article>
+      <article class="article-card" style="background:#012530;" data-animate>
+        <div class="article-card-img">
+          <img src="assets/images/article-1.jpg" alt="Couteaux de cuisine entretien" loading="lazy" width="380" height="240">
+        </div>
+        <div class="article-card-body">
+          <div class="article-card-meta">
+            <span class="tag tag-blue">Équipement</span>
+            <time datetime="2026-05-11" style="color:rgba(255,255,255,0.5);">11 mai 2026</time>
+          </div>
+          <h3 style="color:#fff;">Entretenir et affûter ses couteaux de cuisine : le guide du débutant</h3>
+          <p style="color:rgba(255,255,255,0.65);">Un bon couteau bien affûté est la base de toute bonne cuisine. Suivez nos conseils pour entretenir vos couteaux et prolonger leur durée de vie.</p>
+          <a href="#" class="article-read-more">Lire l'astuce <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
-          <article class="astuce-card reveal">
-            <div style="position:relative;overflow:hidden;">
-              <img
-                src="assets/images/astuces-cuisine.jpg"
-                alt="Astuce cuisine naturelle"
-                class="astuce-img"
-                loading="lazy"
-                width="400"
-                height="180"
-              />
-            </div>
-            <div class="astuce-body">
-              <div class="astuce-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              </div>
-              <h3>Soins naturels pour relancer la floraison</h3>
-              <p>Bicarbonate et cannelle améliorent l'hygiène du substrat de vos orchidées sans engrais chimiques — une méthode douce qui imite les conditions tropicales.</p>
-            </div>
-          </article>
-
-          <article class="astuce-card reveal">
-            <div style="position:relative;overflow:hidden;">
-              <img
-                src="assets/images/tarte.jpg"
-                alt="Pâte à tarte bien croustillante"
-                class="astuce-img"
-                loading="lazy"
-                width="400"
-                height="180"
-              />
-            </div>
-            <div class="astuce-body">
-              <div class="astuce-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 002-2V2"/><path d="M7 2v20M21 15V2a5 5 0 00-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg>
-              </div>
-              <h3>Pâte à tarte anti-détrempe : l'astuce de grand-mère</h3>
-              <p>Saupoudrez de la semoule fine sur la pâte avant d'ajouter vos fruits : elle absorbe l'humidité et garantit un fond parfaitement croustillant à chaque cuisson.</p>
-            </div>
-          </article>
-
-          <article class="astuce-card reveal">
-            <div style="position:relative;overflow:hidden;">
-              <img
-                src="assets/images/gratin.jpg"
-                alt="Gratin réussi au four"
-                class="astuce-img"
-                loading="lazy"
-                width="400"
-                height="180"
-              />
-            </div>
-            <div class="astuce-body">
-              <div class="astuce-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-              </div>
-              <h3>Le gratin parfait en 45 minutes : les secrets de la réussite</h3>
-              <p>Coupez les pommes de terre en tranches régulières, préchauffez bien le four et couvrez en début de cuisson pour un gratin moelleux à cœur et doré en surface.</p>
-            </div>
-          </article>
-
-          <article class="astuce-card reveal">
-            <div style="position:relative;overflow:hidden;">
-              <img
-                src="assets/images/asperges.jpg"
-                alt="Cuisson des asperges"
-                class="astuce-img"
-                loading="lazy"
-                width="400"
-                height="180"
-              />
-            </div>
-            <div class="astuce-body">
-              <div class="astuce-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-              </div>
-              <h3>Cuire les asperges sans perdre leurs nutriments</h3>
-              <p>Vapeur ou four à 180°C — jamais la friture. Conservez l'eau de cuisson pour un bouillon riche en minéraux et associez-les à l'avocat pour un maximum de bienfaits.</p>
-            </div>
-          </article>
-
-          <article class="astuce-card reveal">
-            <div style="position:relative;overflow:hidden;">
-              <img
-                src="assets/images/burek.jpg"
-                alt="Façonner la pâte du burek"
-                class="astuce-img"
-                loading="lazy"
-                width="400"
-                height="180"
-              />
-            </div>
-            <div class="astuce-body">
-              <div class="astuce-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-              </div>
-              <h3>Réussir la pâte du burek maison : étirer sans déchirer</h3>
-              <p>La clé d'une pâte phyllo maison réussie : laissez-la reposer 30 min, travaillez sur une surface farinée et étirez-la délicatement depuis le centre vers les bords.</p>
-            </div>
-          </article>
-
-          <article class="astuce-card reveal">
-            <div style="position:relative;overflow:hidden;">
-              <img
-                src="assets/images/fraisiers.jpg"
-                alt="Marc de café pour le jardin"
-                class="astuce-img"
-                loading="lazy"
-                width="400"
-                height="180"
-              />
-            </div>
-            <div class="astuce-body">
-              <div class="astuce-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0110 10c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z"/><path d="M12 6v6l4 2"/></svg>
-              </div>
-              <h3>Marc de café : quand et comment l'utiliser pour vos fraisiers</h3>
-              <p>Préparez une infusion légère (1 cuil. à soupe pour 1L d'eau), laissez refroidir et arrosez une fois par semaine. Trop concentré, il acidifie trop le sol — dosez avec soin.</p>
-            </div>
-          </article>
-
+<!-- ===== NEWSLETTER ===== -->
+<section class="newsletter" id="newsletter" aria-labelledby="newsletter-title">
+  <div class="container">
+    <div class="newsletter-box" data-animate>
+      <div class="newsletter-content">
+        <h2 id="newsletter-title">Recevez nos meilleures recettes chaque matin</h2>
+        <p>Inscrivez-vous à notre newsletter pour recevoir chaque jour nos meilleures recettes, astuces et actualités food directement dans votre boîte mail.</p>
+        <div class="newsletter-perks">
+          <div class="newsletter-perk">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            1 recette exclusive par jour
+          </div>
+          <div class="newsletter-perk">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Les astuces du moment
+          </div>
+          <div class="newsletter-perk">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Les actualités food en avant-première
+          </div>
+          <div class="newsletter-perk">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Désabonnement en 1 clic, données non partagées
+          </div>
         </div>
       </div>
-    </section>
-
-    <!-- =====================================================
-         NEWSLETTER
-         ===================================================== -->
-    <section class="newsletter" id="newsletter" aria-labelledby="newsletter-heading">
-      <div class="container">
-        <div class="newsletter-inner">
-
-          <!-- Text side -->
-          <div class="newsletter-text reveal">
-            <span class="tag">📩 Newsletter gratuite</span>
-            <h2 id="newsletter-heading">Newsletter Pizza Di Muro</h2>
-            <p>
-              Recevez chaque semaine notre sélection de recettes, astuces et actualités pour bien commencer la journée. Rejoignez des milliers de passionnés de cuisine.
-            </p>
-            <ul class="newsletter-perks" aria-label="Avantages de la newsletter">
-              <li class="perk">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                1 sélection de recettes par semaine
-              </li>
-              <li class="perk">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                Astuces exclusives de chefs
-              </li>
-              <li class="perk">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                Actualités food du moment
-              </li>
-              <li class="perk">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                Désinscription libre à tout moment
-              </li>
-            </ul>
+      <div class="newsletter-form">
+        <h3>Rejoignez 50 000 gourmands !</h3>
+        <form id="newsletterForm" novalidate>
+          <div class="form-group">
+            <input type="text" class="form-input" placeholder="Votre prénom" autocomplete="given-name">
+            <input type="email" class="form-input" placeholder="Votre adresse email" required autocomplete="email">
           </div>
-
-          <!-- Form side -->
-          <div class="newsletter-form-wrap reveal">
-            <h3>Abonnez-vous à notre newsletter</h3>
-            <form id="newsletterForm" novalidate aria-label="Formulaire d'abonnement à la newsletter">
-              <div class="form-group">
-                <label for="sub-prenom">Prénom</label>
-                <input
-                  type="text"
-                  id="sub-prenom"
-                  name="prenom"
-                  class="form-control"
-                  placeholder="Votre prénom"
-                  autocomplete="given-name"
-                />
-              </div>
-              <div class="form-group">
-                <label for="sub-email">Adresse e-mail <span aria-hidden="true">*</span></label>
-                <input
-                  type="email"
-                  id="sub-email"
-                  name="email"
-                  class="form-control"
-                  placeholder="votre@email.fr"
-                  required
-                  autocomplete="email"
-                  aria-required="true"
-                />
-              </div>
-              <div class="form-group" style="display:flex;align-items:flex-start;gap:.6rem;">
-                <input
-                  type="checkbox"
-                  id="sub-rgpd"
-                  name="rgpd"
-                  style="margin-top:.2rem;accent-color:var(--red);"
-                  required
-                  aria-required="true"
-                />
-                <label for="sub-rgpd" style="font-size:.8rem;color:rgba(255,255,255,.6);font-weight:400;">
-                  J'accepte de recevoir la newsletter de Pizza Di Muro et je peux me désinscrire à tout moment.
-                </label>
-              </div>
-              <button type="submit" class="form-submit" aria-label="S'abonner à la newsletter Pizza Di Muro">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="17" height="17" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                S'abonner à la newsletter
-              </button>
-              <p class="form-note">Vos données ne seront jamais partagées avec des tiers. <a href="#footer" style="color:rgba(255,255,255,.5);">Politique de confidentialité</a></p>
-            </form>
-          </div>
-
-        </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-bottom:14px;">
+            S'abonner à la newsletter
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <p class="form-consent">En vous inscrivant, vous acceptez de recevoir nos emails. Vos données ne sont pas partagées. Vous pouvez vous désabonner à tout moment.</p>
+        </form>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-  </main>
-
-  <!-- =====================================================
-       FOOTER
-       ===================================================== -->
-  <footer class="site-footer" id="footer" role="contentinfo">
+<!-- ===== FOOTER ===== -->
+<footer class="footer" aria-label="Pied de page">
+  <div class="footer-main">
     <div class="container">
       <div class="footer-grid">
-
         <!-- Brand -->
         <div class="footer-brand">
-          <img src="assets/images/logo.png" alt="Pizza Di Muro" class="site-logo" width="160" height="44" loading="lazy" />
-          <p>
-            Pizza Di Muro est votre magazine culinaire au quotidien : recettes simples, astuces de chefs, décryptages d'aliments et actualités food pour mieux manger chaque jour.
-          </p>
-          <nav class="footer-social" aria-label="Réseaux sociaux">
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          <a href="/" class="footer-logo" aria-label="Pizza Di Muro">
+            <img src="assets/images/logo.png" alt="Pizza Di Muro" width="160" height="42">
+          </a>
+          <p>Pizza Di Muro est votre magazine food quotidien : recettes faciles, astuces de chefs, décryptages d'aliments et actualités pour mieux manger.</p>
+          <div class="footer-social" aria-label="Nos réseaux sociaux">
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
             </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
             </a>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="social-link" aria-label="YouTube">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.4 19.54C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 001.94-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor"/></svg>
+            <a href="#" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="rgba(0,23,30,1)"/></svg>
             </a>
-            <a href="https://www.pinterest.fr/" target="_blank" rel="noopener" class="social-link" aria-label="Pinterest">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+            <a href="#" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.89a8.28 8.28 0 0 0 4.84 1.55V7a4.85 4.85 0 0 1-1.07-.31z"/></svg>
             </a>
-          </nav>
+          </div>
         </div>
-
         <!-- Catégories -->
         <div class="footer-col">
           <h4>Catégories</h4>
-          <nav class="footer-links" aria-label="Catégories du site">
-            <a href="#actualites" class="footer-link">Actualités culinaires</a>
-            <a href="#recettes" class="footer-link">Recettes gourmandes</a>
-            <a href="#aliments" class="footer-link">Aliments &amp; Nutrition</a>
-            <a href="#astuces" class="footer-link">Astuces de cuisine</a>
-          </nav>
+          <ul class="footer-links">
+            <li><a href="#actualites">Actualités Food</a></li>
+            <li><a href="#recettes">Recettes</a></li>
+            <li><a href="#aliments">Aliments</a></li>
+            <li><a href="#astuces">Astuces Cuisine</a></li>
+            <li><a href="#">Nutrition</a></li>
+            <li><a href="#">Gastronomie</a></li>
+          </ul>
         </div>
-
+        <!-- Recettes populaires -->
+        <div class="footer-col">
+          <h4>Recettes populaires</h4>
+          <ul class="footer-links">
+            <li><a href="#">Gigot d'agneau</a></li>
+            <li><a href="#">Gratin dauphinois</a></li>
+            <li><a href="#">Tarte aux fraises</a></li>
+            <li><a href="#">Pâtes carbonara</a></li>
+            <li><a href="#">Soupe à l'oignon</a></li>
+            <li><a href="#">Ratatouille</a></li>
+          </ul>
+        </div>
         <!-- À propos -->
         <div class="footer-col">
           <h4>À propos</h4>
-          <nav class="footer-links" aria-label="Liens à propos">
-            <a href="#footer" class="footer-link">À propos de nous</a>
-            <a href="#footer" class="footer-link">Notre équipe</a>
-            <a href="#footer" class="footer-link">Contact</a>
-            <a href="#footer" class="footer-link">Partenariats</a>
-          </nav>
+          <ul class="footer-links">
+            <li><a href="#">Qui sommes-nous ?</a></li>
+            <li><a href="#">Nos auteurs</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Plan du site</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+            <li><a href="#">Partenariats</a></li>
+          </ul>
         </div>
-
-        <!-- Légal -->
-        <div class="footer-col">
-          <h4>Informations légales</h4>
-          <nav class="footer-links" aria-label="Mentions légales">
-            <a href="#footer" class="footer-link">Mentions légales</a>
-            <a href="#footer" class="footer-link">Politique de confidentialité</a>
-            <a href="#footer" class="footer-link">CGU</a>
-            <a href="#footer" class="footer-link">Cookies</a>
-          </nav>
-        </div>
-
       </div>
-
-      <!-- Footer bottom -->
-      <div class="footer-bottom">
-        <p>&copy; 2026 Pizza Di Muro. Tous droits réservés.</p>
-        <nav class="footer-bottom-links" aria-label="Liens rapides du pied de page">
-          <a href="#footer">Mentions légales</a>
-          <a href="#footer">Confidentialité</a>
-          <a href="#newsletter">Newsletter</a>
+    </div>
+  </div>
+  <!-- Footer bottom -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <p>&copy; 2026 Pizza Di Muro &mdash; Tous droits réservés</p>
+        <nav class="footer-legal" aria-label="Liens légaux">
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">Mentions légales</a>
+          <a href="#">CGU</a>
+          <a href="#">Cookies</a>
         </nav>
       </div>
-
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <!-- Scripts -->
-  <script src="assets/js/main.js" defer></script>
+<!-- ===== SEARCH OVERLAY ===== -->
+<div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Recherche">
+  <div class="search-box">
+    <button class="search-close" id="searchClose" aria-label="Fermer la recherche">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="search-input-wrap">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" id="searchInput" placeholder="Rechercher une recette, un aliment…" autocomplete="off">
+    </div>
+    <div class="search-suggestions">
+      <h4>Recherches populaires</h4>
+      <div class="search-tags">
+        <a href="#">Pizza</a>
+        <a href="#">Pâtes</a>
+        <a href="#">Recette rapide</a>
+        <a href="#">Gratin</a>
+        <a href="#">Dessert</a>
+        <a href="#">Végétarien</a>
+        <a href="#">Astuces chef</a>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- ===== BACK TO TOP ===== -->
+<button class="back-to-top" id="backToTop" aria-label="Revenir en haut">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<!-- ===== TOAST NOTIFICATION ===== -->
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+  <span class="toast-msg"></span>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>
