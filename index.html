@@ -1,606 +1,647 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pizza Di Muro : Recettes faciles, astuces cuisine et actualités food au quotidien</title>
-  <meta name="description" content="Découvrez des recettes simples, astuces de chefs, décryptages d'aliments et actualités food pour mieux manger chaque jour." />
-  <meta name="robots" content="index, follow" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Pizza Di Muro : Recettes, astuces et actualités food" />
-  <meta property="og:description" content="Découvrez des recettes simples, astuces de chefs, décryptages d'aliments et actualités food pour mieux manger chaque jour." />
-  <meta property="og:image" content="assets/images/hero-cuisine.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <meta name="description" content="Découvrez des recettes simples, astuces de chefs, décryptages d'aliments et actualités food pour mieux manger chaque jour.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Pizza Di Muro">
+  <link rel="canonical" href="https://pizza-dimuro.fr/">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://pizza-dimuro.fr/">
+  <meta property="og:title"       content="Pizza Di Muro : Recettes faciles, astuces cuisine et actualités food">
+  <meta property="og:description" content="Découvrez des recettes simples, astuces de chefs, décryptages d'aliments et actualités food pour mieux manger chaque jour.">
+  <meta property="og:image"       content="assets/images/hero.jpg">
+  <meta name="twitter:card"       content="summary_large_image">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Pizza Di Muro",
+    "url": "https://pizza-dimuro.fr/",
+    "description": "Recettes faciles, astuces cuisine et actualités food au quotidien",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://pizza-dimuro.fr/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
 </head>
+
 <body>
 
-<!-- ===== SEARCH OVERLAY ===== -->
-<div class="search-overlay" role="dialog" aria-label="Recherche">
-  <div class="search-box">
-    <div class="search-input-wrap">
-      <svg width="20" height="20" fill="none" stroke="#9ca3af" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-      <input type="search" placeholder="Rechercher une recette, un aliment…" aria-label="Recherche" />
-      <button class="search-close" aria-label="Fermer la recherche">✕</button>
+  <!-- ========== TOP BAR ========== -->
+  <div class="topbar" role="complementary" aria-label="Informations supplémentaires">
+    <div class="container">
+      <span class="topbar-date">Vendredi 22 mai 2026</span>
+      <div class="topbar-social" aria-label="Réseaux sociaux">
+        <!-- Facebook -->
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <!-- Instagram -->
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <!-- YouTube -->
+        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.97C5.12 20 12 20 12 20s6.88 0 8.59-.45a2.78 2.78 0 0 0 1.96-1.97A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon fill="white" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+        </a>
+        <!-- TikTok -->
+        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.16 8.16 0 0 0 4.77 1.52V6.75a4.85 4.85 0 0 1-1-.06z"/></svg>
+        </a>
+        <!-- X/Twitter -->
+        <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
     </div>
-    <p class="search-hint">Appuyez sur <kbd>Échap</kbd> pour fermer</p>
   </div>
-</div>
 
-<!-- ===== HEADER ===== -->
-<header class="header">
-  <div class="container">
-    <nav class="nav" role="navigation" aria-label="Navigation principale">
-      <a href="/" class="nav-logo" aria-label="Pizza Di Muro – Accueil">
-        <img src="assets/images/logo.png" alt="Pizza Di Muro" width="160" height="44"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
-        <span class="nav-logo-fallback" style="display:none;">Pizza <span>Di Muro</span></span>
-      </a>
+  <!-- ========== HEADER ========== -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+        <a href="/" class="logo" aria-label="Pizza Di Muro - Accueil">
+          <img src="assets/images/logo.png" alt="Pizza Di Muro" width="120" height="48">
+        </a>
 
-      <ul class="nav-links" id="nav-menu">
-        <li><a href="#actualites" class="active">Actualités</a></li>
-        <li><a href="#recettes">Recettes</a></li>
-        <li><a href="#aliments">Aliments</a></li>
-        <li><a href="#astuces">Astuces</a></li>
-      </ul>
+        <nav class="main-nav" role="navigation" aria-label="Navigation principale">
+          <ul class="nav-list">
+            <li><a href="#actualites">Actualités</a></li>
+            <li><a href="#recettes">Recettes</a></li>
+            <li><a href="#aliments">Aliments</a></li>
+            <li><a href="#astuces">Astuces</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+          </ul>
+        </nav>
 
-      <div class="nav-cta">
-        <button class="nav-search-btn" aria-label="Ouvrir la recherche">
-          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-        </button>
-        <a href="#newsletter" class="btn btn-primary" style="padding:10px 20px; font-size:0.85rem;">Newsletter</a>
-        <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
+        <a href="#newsletter" class="btn btn-primary header-cta" aria-label="S'abonner à la newsletter">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          S'abonner
+        </a>
+
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
-    </nav>
-  </div>
-</header>
-
-<!-- ===== HERO ===== -->
-<section class="hero" aria-label="Bannière principale">
-  <div class="hero-bg">
-    <img src="assets/images/hero-cuisine.jpg" alt="Cuisine française avec des plats appétissants" loading="eager" />
-  </div>
-  <div class="hero-overlay"></div>
-
-  <div class="container">
-    <div class="hero-content">
-      <div class="hero-badge">Nouveau chaque jour</div>
-      <h1>Pizza Di Muro : <em>Recettes faciles</em>, astuces cuisine et actualités food au quotidien</h1>
-      <p class="hero-desc">Découvrez des recettes simples, astuces de chefs, décryptages d'aliments et actualités food pour mieux manger chaque jour.</p>
-      <div class="hero-actions">
-        <a href="#recettes" class="btn btn-primary">
-          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-          Explorer les recettes
-        </a>
-        <a href="#actualites" class="btn btn-ghost-white">Voir les actualités</a>
-      </div>
     </div>
-  </div>
+  </header>
 
-  <div class="hero-stats" aria-hidden="true">
-    <div class="stat-item">
-      <strong>500+</strong>
-      <span>Recettes</span>
-    </div>
-    <div class="stat-item">
-      <strong>50k+</strong>
-      <span>Lecteurs</span>
-    </div>
-    <div class="stat-item">
-      <strong>4.8★</strong>
-      <span>Note moyenne</span>
-    </div>
-  </div>
-</section>
+  <main>
 
-<!-- ===== CATEGORIES STRIP ===== -->
-<nav class="categories-strip" aria-label="Catégories">
-  <div class="container">
-    <ul class="categories-list">
-      <li>
-        <a href="#actualites" class="cat-link active">
-          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/></svg>
-          Actualités
-        </a>
-      </li>
-      <li>
-        <a href="#recettes" class="cat-link">
-          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
-          Recettes
-        </a>
-      </li>
-      <li>
-        <a href="#aliments" class="cat-link">
-          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/></svg>
-          Aliments
-        </a>
-      </li>
-      <li>
-        <a href="#astuces" class="cat-link">
-          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
-          Astuces
-        </a>
-      </li>
-      <li>
-        <a href="#newsletter" class="cat-link">
-          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          Newsletter
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<!-- ===== ACTUALITÉS ===== -->
-<section id="actualites" class="actualites section-padding">
-  <div class="container">
-    <div class="section-header fade-in">
-      <span class="section-label">Actualités culinaires</span>
-      <h2>Les dernières nouvelles du monde food</h2>
-      <p>Restez informé des dernières tendances et événements dans le monde de la cuisine et de l'alimentation.</p>
-    </div>
-
-    <div class="articles-grid">
-      <!-- Article featured -->
-      <article class="article-featured card card-featured fade-in">
-        <div class="card-image">
-          <img src="assets/images/actu-food.jpg" alt="Tendances culinaires 2026 : les nouvelles saveurs qui s'imposent" loading="lazy" />
-          <span class="card-category">À la une</span>
-        </div>
-        <div class="card-body">
-          <div class="card-meta">
-            <time datetime="2026-05-20">20 mai 2026</time>
-            <span>·</span>
-            <span>5 min de lecture</span>
+    <!-- ========== HERO ========== -->
+    <section class="hero" aria-label="En-tête principal">
+      <div class="hero-bg" role="img" aria-label="Pizza artisanale dans un four à bois"></div>
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+            Le blog food de référence
           </div>
-          <h3>Tendances culinaires 2026 : les nouvelles saveurs qui s'imposent dans nos assiettes</h3>
-          <p>Des fermentations revisitées aux cuisines fusion inattendues, découvrez quelles tendances alimentaires transforment la gastronomie cette année et comment les adopter facilement à la maison.</p>
-          <a href="#" class="card-link">
-            Lire l'article
-            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-      </article>
-
-      <!-- Article small 1 -->
-      <article class="card card-small fade-in">
-        <div class="card-image">
-          <img src="assets/images/gigot-agneau.jpg" alt="Gigot d'agneau aux flageolets pour Pâques" loading="lazy" />
-          <span class="card-category">Tradition</span>
-        </div>
-        <div class="card-body">
-          <div class="card-meta">
-            <time datetime="2026-05-18">18 mai 2026</time>
+          <h1>Pizza Di Muro : <em>Recettes faciles,</em> astuces cuisine et actualités food au quotidien</h1>
+          <p class="hero-desc">
+            Découvrez des recettes simples, astuces de chefs, décryptages d'aliments et actualités food pour mieux manger chaque jour.
+          </p>
+          <div class="hero-actions">
+            <a href="#recettes" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+              Découvrir les recettes
+            </a>
+            <a href="#newsletter" class="btn btn-outline" style="border-color:rgba(255,255,255,.5);color:#fff">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Newsletter gratuite
+            </a>
           </div>
-          <h3>Gigot d'agneau aux flageolets : l'accord culinaire parfait de Pâques</h3>
-          <a href="#" class="card-link">Lire <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-      </article>
-
-      <!-- Article small 2 -->
-      <article class="card card-small fade-in">
-        <div class="card-image">
-          <img src="assets/images/asperges.jpg" alt="Asperges vertes : bienfaits santé au printemps" loading="lazy" />
-          <span class="card-category">Santé</span>
-        </div>
-        <div class="card-body">
-          <div class="card-meta">
-            <time datetime="2026-05-17">17 mai 2026</time>
-          </div>
-          <h3>Asperges vertes : pourquoi ce légume de printemps est idéal pour la santé</h3>
-          <a href="#" class="card-link">Lire <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-      </article>
-
-      <!-- Article small 3 -->
-      <article class="card card-small fade-in">
-        <div class="card-image">
-          <img src="assets/images/fraisiers.jpg" alt="Fraisiers : l'ingrédient de cuisine pour de plus gros fruits" loading="lazy" />
-          <span class="card-category">Jardin & cuisine</span>
-        </div>
-        <div class="card-body">
-          <div class="card-meta">
-            <time datetime="2026-05-15">15 mai 2026</time>
-          </div>
-          <h3>Fraisiers : l'ingrédient courant pour favoriser des fruits plus gros dès le printemps</h3>
-          <a href="#" class="card-link">Lire <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-      </article>
-
-      <!-- Article small 4 -->
-      <article class="card card-small fade-in">
-        <div class="card-image">
-          <img src="assets/images/gratin-pommes-de-terre.jpg" alt="Gratin de pommes de terre : recette familiale en 45 minutes" loading="lazy" />
-          <span class="card-category">Recette</span>
-        </div>
-        <div class="card-body">
-          <div class="card-meta">
-            <time datetime="2026-05-14">14 mai 2026</time>
-          </div>
-          <h3>Gratin de pommes de terre au four : la recette familiale prête en 45 minutes</h3>
-          <a href="#" class="card-link">Lire <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-      </article>
-    </div>
-
-    <div class="section-cta fade-in">
-      <a href="#" class="btn btn-outline">
-        Découvrez nos actualités
-        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ===== RECETTES ===== -->
-<section id="recettes" class="recettes section-padding">
-  <div class="container">
-    <div class="section-header fade-in">
-      <span class="section-label">Recettes gourmandes</span>
-      <h2>Les meilleures recettes du moment</h2>
-      <p>Explorez une sélection de recettes faciles et savoureuses pour toutes les occasions, du quotidien aux repas festifs.</p>
-    </div>
-
-    <div class="recettes-grid">
-      <article class="recette-card fade-in">
-        <div class="card-image">
-          <img src="assets/images/recette-pizza.jpg" alt="Pizza maison aux légumes du marché" loading="lazy" />
-        </div>
-        <div class="recette-overlay">
-          <div class="recette-info">
-            <span class="recette-tag">Pizza</span>
-            <span class="recette-time">
-              <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-              30 min
-            </span>
-          </div>
-          <h3>Pizza maison aux légumes du marché et mozzarella fraîche</h3>
-        </div>
-      </article>
-
-      <article class="recette-card fade-in">
-        <div class="card-image">
-          <img src="assets/images/recette-restaurant.jpg" alt="Pasta fraîche al pomodoro" loading="lazy" />
-        </div>
-        <div class="recette-overlay">
-          <div class="recette-info">
-            <span class="recette-tag">Pâtes</span>
-            <span class="recette-time">
-              <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-              25 min
-            </span>
-          </div>
-          <h3>Pasta fraîche al pomodoro : la recette authentique de la nonna</h3>
-        </div>
-      </article>
-
-      <article class="recette-card fade-in">
-        <div class="card-image">
-          <img src="assets/images/tarte.jpg" alt="Tarte aux fruits de saison" loading="lazy" />
-        </div>
-        <div class="recette-overlay">
-          <div class="recette-info">
-            <span class="recette-tag">Dessert</span>
-            <span class="recette-time">
-              <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-              50 min
-            </span>
-          </div>
-          <h3>Tarte aux fruits de saison : crème pâtissière et fruits frais du marché</h3>
-        </div>
-      </article>
-
-      <article class="recette-card fade-in">
-        <div class="card-image">
-          <img src="assets/images/aliment-legumes.jpg" alt="Bowl nutritif aux graines et légumes" loading="lazy" />
-        </div>
-        <div class="recette-overlay">
-          <div class="recette-info">
-            <span class="recette-tag">Bowl</span>
-            <span class="recette-time">
-              <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-              20 min
-            </span>
-          </div>
-          <h3>Bowl nutritif aux graines, légumes de saison et sauce tahini</h3>
-        </div>
-      </article>
-
-      <article class="recette-card fade-in">
-        <div class="card-image">
-          <img src="assets/images/gratin-pommes-de-terre.jpg" alt="Gratin dauphinois au parmesan" loading="lazy" />
-        </div>
-        <div class="recette-overlay">
-          <div class="recette-info">
-            <span class="recette-tag">Gratin</span>
-            <span class="recette-time">
-              <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-              45 min
-            </span>
-          </div>
-          <h3>Gratin dauphinois au parmesan : la recette familiale inratable</h3>
-        </div>
-      </article>
-
-      <article class="recette-card fade-in">
-        <div class="card-image">
-          <img src="assets/images/burek.jpg" alt="Burek pâtisserie des Balkans" loading="lazy" />
-        </div>
-        <div class="recette-overlay">
-          <div class="recette-info">
-            <span class="recette-tag">Spécialité</span>
-            <span class="recette-time">
-              <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-              60 min
-            </span>
-          </div>
-          <h3>Burek : la pâtisserie salée des Balkans qui conquiert nos tables</h3>
-        </div>
-      </article>
-    </div>
-
-    <div class="section-cta fade-in">
-      <a href="#" class="btn btn-primary">
-        Voir les recettes
-        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ===== FOCUS ALIMENTS ===== -->
-<section id="aliments" class="aliments section-padding">
-  <div class="container">
-    <div class="section-header fade-in">
-      <span class="section-label">Focus sur les aliments</span>
-      <h2>Mangez mieux, comprenez ce que vous mangez</h2>
-      <p>Apprenez à mieux connaître les aliments, leurs bienfaits et comment les intégrer dans votre alimentation.</p>
-    </div>
-
-    <div class="aliments-layout">
-      <div class="aliments-visual fade-in">
-        <img src="assets/images/aliment-legumes.jpg" alt="Sélection d'aliments sains et colorés" loading="lazy" />
-        <div class="aliment-badge">
-          <span>+200</span>
-          aliments décryptés
-        </div>
-      </div>
-
-      <div class="aliments-content fade-in">
-        <h2>Ce que vous mangez fait votre santé</h2>
-        <p>Nos experts nutrition décryptent pour vous les bienfaits cachés des aliments du quotidien, les mythes à déconstruire et les associations intelligentes pour une santé optimale tout au long de l'année.</p>
-
-        <ul class="aliments-list">
-          <li class="aliment-item">
-            <div class="aliment-icon">🫒</div>
+          <div class="hero-stats">
             <div>
-              <h4>Huile d'olive extra vierge</h4>
-              <p>Riche en polyphénols, elle protège le cœur et réduit l'inflammation. Comment bien la choisir et la conserver.</p>
+              <span class="hero-stat-number">200+</span>
+              <span class="hero-stat-label">Recettes</span>
             </div>
-          </li>
-          <li class="aliment-item">
-            <div class="aliment-icon">🥦</div>
             <div>
-              <h4>Brocoli et crucifères</h4>
-              <p>Alliés anti-cancer puissants, sources de vitamine C et de fibres. Les meilleures façons de les cuisiner sans perdre leurs nutriments.</p>
+              <span class="hero-stat-number">50k+</span>
+              <span class="hero-stat-label">Abonnés</span>
             </div>
-          </li>
-          <li class="aliment-item">
-            <div class="aliment-icon">🐟</div>
             <div>
-              <h4>Poissons gras et oméga-3</h4>
-              <p>Saumon, sardine, maquereau : essentiels pour le cerveau et le cœur. Quelle fréquence et comment les préparer sainement.</p>
+              <span class="hero-stat-number">100%</span>
+              <span class="hero-stat-label">Gratuit</span>
             </div>
-          </li>
-          <li class="aliment-item">
-            <div class="aliment-icon">🫐</div>
-            <div>
-              <h4>Baies et antioxydants</h4>
-              <p>Myrtilles, framboises, cassis : des bombes d'antioxydants pour lutter contre le vieillissement cellulaire.</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Défiler</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </div>
+    </section>
+
+    <!-- ========== TICKER ========== -->
+    <div class="news-ticker" role="marquee" aria-label="Dernières nouvelles">
+      <div class="container">
+        <div class="ticker-inner">
+          <span class="ticker-label">À la une</span>
+          <div class="ticker-track">
+            <span class="ticker-item">La brioche maison revisitée façon chef étoilé</span>
+            <span class="ticker-item">Les légumes de printemps qui boostent votre immunité</span>
+            <span class="ticker-item">5 astuces pour une pâte à pizza parfaite</span>
+            <span class="ticker-item">Tendance 2026 : la cuisine méditerranéenne au sommet</span>
+            <span class="ticker-item">Comment choisir les meilleures tomates du marché</span>
+            <span class="ticker-item">Le gratin dauphinois revisité par nos chefs</span>
+            <span class="ticker-item">Recettes fraîches pour l'été : inspiration Réunion</span>
+            <span class="ticker-item">Les bienfaits cachés du curcuma en cuisine</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== ACTUALITÉS ========== -->
+    <section class="actualites" id="actualites" aria-labelledby="actu-title">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Actualités culinaires</span>
+          <h2 class="section-title" id="actu-title">Restez au cœur de l'actualité food</h2>
+          <p class="section-desc">
+            Restez informé des dernières tendances et événements dans le monde de la cuisine et de l'alimentation.
+          </p>
+        </div>
+
+        <div class="actu-grid">
+          <!-- Featured article -->
+          <article class="actu-featured fade-in" aria-label="Article vedette">
+            <img
+              src="assets/images/actualites.jpg"
+              alt="Actualité culinaire : tendances et événements food"
+              loading="lazy"
+              width="760" height="570"
+            >
+            <div class="actu-featured-overlay">
+              <span class="actu-cat">Tendance</span>
+              <h3 class="actu-featured-title">La cuisine méditerranéenne s'impose comme la grande tendance gastronomique de 2026</h3>
+              <p class="actu-meta">
+                <time datetime="2026-05-20">20 mai 2026</time> · 5 min de lecture
+              </p>
             </div>
-          </li>
-        </ul>
+          </article>
 
-        <a href="#" class="btn btn-primary">
-          En savoir plus sur les aliments
-          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+          <!-- Side articles -->
+          <div class="actu-list">
+            <article class="actu-card fade-in">
+              <div class="actu-card-img">
+                <img src="assets/images/article1.jpg" alt="Recette de pizza italienne authentique" loading="lazy" width="90" height="90">
+              </div>
+              <div class="actu-card-body">
+                <span class="actu-cat" style="font-size:.65rem;padding:.15rem .5rem;">Recette</span>
+                <h3 class="actu-card-title">La pizza napolitaine reconquiert les tables françaises avec sa pâte ultra-fine</h3>
+                <p class="actu-card-date"><time datetime="2026-05-18">18 mai 2026</time></p>
+              </div>
+            </article>
 
-<!-- ===== ASTUCES ===== -->
-<section id="astuces" class="astuces section-padding">
-  <div class="container">
-    <div class="section-header fade-in">
-      <span class="section-label">Astuces de cuisine</span>
-      <h2>Les secrets des grands chefs</h2>
-      <p>Profitez de conseils pratiques et astuces de chefs pour améliorer vos techniques culinaires et gagner du temps.</p>
-    </div>
+            <article class="actu-card fade-in">
+              <div class="actu-card-img">
+                <img src="assets/images/article2.jpg" alt="Marché de producteurs locaux" loading="lazy" width="90" height="90">
+              </div>
+              <div class="actu-card-body">
+                <span class="actu-cat" style="font-size:.65rem;padding:.15rem .5rem;">Produits</span>
+                <h3 class="actu-card-title">Circuit court : pourquoi acheter au marché de producteurs locaux change tout</h3>
+                <p class="actu-card-date"><time datetime="2026-05-15">15 mai 2026</time></p>
+              </div>
+            </article>
 
-    <div class="astuces-grid">
-      <!-- Astuce featured -->
-      <article class="astuce-card featured fade-in">
-        <div class="astuce-image">
-          <img src="assets/images/astuce-cuisine.jpg" alt="Chef en train de préparer des pâtes maison" loading="lazy" />
+            <article class="actu-card fade-in">
+              <div class="actu-card-img">
+                <img src="assets/images/article3.jpg" alt="Petit-déjeuner équilibré et coloré" loading="lazy" width="90" height="90">
+              </div>
+              <div class="actu-card-body">
+                <span class="actu-cat" style="font-size:.65rem;padding:.15rem .5rem;">Santé</span>
+                <h3 class="actu-card-title">Le petit-déjeuner idéal selon les nutritionnistes : que doit-il vraiment contenir ?</h3>
+                <p class="actu-card-date"><time datetime="2026-05-12">12 mai 2026</time></p>
+              </div>
+            </article>
+
+            <article class="actu-card fade-in">
+              <div class="actu-card-img">
+                <img src="assets/images/astuces.jpg" alt="Chef en cuisine" loading="lazy" width="90" height="90">
+              </div>
+              <div class="actu-card-body">
+                <span class="actu-cat" style="font-size:.65rem;padding:.15rem .5rem;">Chef</span>
+                <h3 class="actu-card-title">Interview exclusive : un chef étoilé révèle ses secrets de sauce tomate</h3>
+                <p class="actu-card-date"><time datetime="2026-05-10">10 mai 2026</time></p>
+              </div>
+            </article>
+          </div>
         </div>
-        <div class="astuce-body">
-          <div class="astuce-num">1</div>
-          <h3>L'astuce des chefs pour que vos pâtes ne collent jamais</h3>
-          <p>Contrairement aux idées reçues, ajouter de l'huile dans l'eau de cuisson est une erreur ! Découvrez la vraie technique des cuisiniers professionnels pour des pâtes al dente parfaites qui ne collent pas. Un simple geste change tout.</p>
-          <a href="#" class="astuce-link">
-            Découvrir l'astuce
-            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-      </article>
 
-      <!-- Astuce 2 -->
-      <article class="astuce-card fade-in">
-        <div class="astuce-image">
-          <img src="assets/images/astuce-epices.jpg" alt="Épices et herbes aromatiques" loading="lazy" />
-        </div>
-        <div class="astuce-body">
-          <div class="astuce-num">2</div>
-          <h3>Comment bien utiliser les épices pour sublimer chaque plat</h3>
-          <p>Les épices ont leurs secrets : quand les ajouter, comment les toaster et quelles associations éviter. Le guide complet.</p>
-          <a href="#" class="astuce-link">
-            Voir l'astuce
-            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-      </article>
-
-      <!-- Astuce 3 -->
-      <article class="astuce-card fade-in">
-        <div class="astuce-image">
-          <img src="assets/images/aliment-fruits.jpg" alt="Conservation des fruits et légumes frais" loading="lazy" />
-        </div>
-        <div class="astuce-body">
-          <div class="astuce-num">3</div>
-          <h3>Conserver vos fruits et herbes fraîches 3 fois plus longtemps</h3>
-          <p>Basilic, persil, fraises… ne les laissez plus s'abîmer en 2 jours. Cette méthode simple prolonge leur fraîcheur d'une semaine.</p>
-          <a href="#" class="astuce-link">
-            Voir l'astuce
-            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-      </article>
-
-      <!-- Astuce 4 -->
-      <article class="astuce-card fade-in">
-        <div class="astuce-image">
-          <img src="assets/images/actu-marche.jpg" alt="Choisir les bons produits au marché" loading="lazy" />
-        </div>
-        <div class="astuce-body">
-          <div class="astuce-num">4</div>
-          <h3>La règle des 6-8-10 pour des œufs parfaits à chaque fois</h3>
-          <p>Mollet, à la coque ou dur : maîtrisez la cuisson des œufs avec cette règle mnémotechnique infaillible utilisée par les chefs étoilés.</p>
-          <a href="#" class="astuce-link">
-            Voir l'astuce
-            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-      </article>
-    </div>
-
-    <div class="section-cta fade-in">
-      <a href="#" class="btn btn-secondary">
-        Découvrir les astuces
-        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ===== NEWSLETTER ===== -->
-<section id="newsletter" class="newsletter">
-  <div class="newsletter-bg">
-    <img src="assets/images/recette-hero.jpg" alt="" role="presentation" loading="lazy" />
-  </div>
-  <div class="newsletter-overlay"></div>
-
-  <div class="newsletter-content fade-in">
-    <div class="newsletter-icon" aria-hidden="true">✉️</div>
-    <h2>Newsletter Pizza Di Muro</h2>
-    <p>Inscrivez-vous à notre newsletter pour recevoir chaque jour des recettes, astuces et actualités directement dans votre boîte mail. Rejoignez plus de 50 000 gourmands.</p>
-
-    <form class="newsletter-form" action="#" method="post" novalidate>
-      <input type="email" name="email" placeholder="Votre adresse email" required aria-label="Adresse email" autocomplete="email" />
-      <button type="submit">S'abonner à la newsletter</button>
-    </form>
-
-    <p class="newsletter-privacy">
-      En vous inscrivant, vous acceptez notre <a href="#">politique de confidentialité</a>. Désabonnement possible à tout moment.
-    </p>
-  </div>
-</section>
-
-<!-- ===== FOOTER ===== -->
-<footer class="footer" role="contentinfo">
-  <div class="container">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <img src="assets/images/logo.png" alt="Pizza Di Muro"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
-        <div class="footer-brand-name" style="display:none;">Pizza <span>Di Muro</span></div>
-        <p>Votre référence pour les recettes faciles, les astuces de cuisine et les actualités food pour mieux manger au quotidien.</p>
-        <div class="social-links" aria-label="Réseaux sociaux">
-          <a href="#" class="social-link" aria-label="Facebook">
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          </a>
-          <a href="#" class="social-link" aria-label="Instagram">
-            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </a>
-          <a href="#" class="social-link" aria-label="YouTube">
-            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
-          </a>
-          <a href="#" class="social-link" aria-label="TikTok">
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.28 6.28 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.73a4.85 4.85 0 0 1-1.01-.04z"/></svg>
-          </a>
-          <a href="#" class="social-link" aria-label="Twitter / X">
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        <div class="actu-footer fade-in">
+          <a href="#actualites" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Découvrez nos articles d'actualité
           </a>
         </div>
       </div>
+    </section>
 
-      <div class="footer-col">
-        <h4>Catégories</h4>
-        <ul>
-          <li><a href="#actualites">Actualités culinaires</a></li>
-          <li><a href="#recettes">Recettes gourmandes</a></li>
-          <li><a href="#aliments">Focus sur les aliments</a></li>
-          <li><a href="#astuces">Astuces de cuisine</a></li>
-          <li><a href="#newsletter">Newsletter</a></li>
-        </ul>
+    <!-- ========== RECETTES ========== -->
+    <section class="recettes" id="recettes" aria-labelledby="recettes-title">
+      <div class="container">
+        <div class="section-header center fade-in">
+          <span class="section-label">Recettes savoureuses</span>
+          <h2 class="section-title" id="recettes-title">Des recettes pour tous les goûts</h2>
+          <p class="section-desc">
+            Explorez une sélection de recettes faciles à réaliser pour tous les goûts et toutes les occasions.
+          </p>
+        </div>
+
+        <div class="recettes-grid">
+          <!-- Card 1 -->
+          <article class="recipe-card fade-in">
+            <div class="recipe-card-img">
+              <img src="assets/images/recettes.jpg" alt="Pizza maison garnie de mozzarella et basilic frais" loading="lazy" width="400" height="300">
+              <span class="recipe-tag">Populaire</span>
+            </div>
+            <div class="recipe-card-body">
+              <h3 class="recipe-card-title">Pizza Margherita maison : la recette authentique de Naples</h3>
+              <p class="recipe-card-desc">Pâte fine et croustillante, sauce tomate maison, mozzarella di bufala et basilic frais. La vraie recette italienne.</p>
+              <div class="recipe-card-meta">
+                <span class="recipe-meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  30 min
+                </span>
+                <span class="recipe-meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  4 pers.
+                </span>
+                <span class="recipe-meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  Facile
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="recipe-card fade-in">
+            <div class="recipe-card-img">
+              <img src="assets/images/actualites.jpg" alt="Brioche maison dorée encore tiède" loading="lazy" width="400" height="300">
+              <span class="recipe-tag">Coup de cœur</span>
+            </div>
+            <div class="recipe-card-body">
+              <h3 class="recipe-card-title">Brioche moelleuse au beurre : la recette inratable du week-end</h3>
+              <p class="recipe-card-desc">Encore tiède, dorée et filante — cette brioche maison fera fondre toute la famille au petit-déjeuner du dimanche.</p>
+              <div class="recipe-card-meta">
+                <span class="recipe-meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  2h30
+                </span>
+                <span class="recipe-meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  6 pers.
+                </span>
+                <span class="recipe-meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  Moyen
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="recipe-card fade-in">
+            <div class="recipe-card-img">
+              <img src="assets/images/aliments.jpg" alt="Salade composée fraîche et colorée" loading="lazy" width="400" height="300">
+            </div>
+            <div class="recipe-card-body">
+              <h3 class="recipe-card-title">Salade méditerranéenne : légumes grillés, feta et herbes fraîches</h3>
+              <p class="recipe-card-desc">Un plat estival coloré et nutritif. Courgettes, poivrons, tomates cerises, feta crémeuse et herbes aromatiques.</p>
+              <div class="recipe-card-meta">
+                <span class="recipe-meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  20 min
+                </span>
+                <span class="recipe-meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  2 pers.
+                </span>
+                <span class="recipe-meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  Facile
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="recettes-footer fade-in">
+          <a href="#recettes" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            Essayez nos recettes
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ALIMENTS ========== -->
+    <section class="aliments" id="aliments" aria-labelledby="aliments-title">
+      <div class="container">
+        <div class="aliments-inner">
+          <div class="aliments-content fade-in">
+            <span class="section-label">Focus sur les aliments</span>
+            <h2 class="section-title" id="aliments-title">Connaissez-vous vraiment ce que vous mangez ?</h2>
+            <p class="section-desc">
+              Apprenez à mieux connaître les aliments, leurs bienfaits et comment les intégrer dans votre alimentation.
+            </p>
+            <a href="#aliments" class="btn btn-white">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+              En savoir plus sur les aliments
+            </a>
+          </div>
+
+          <div class="aliments-cards">
+            <article class="aliment-card fade-in">
+              <div class="aliment-card-img">
+                <img src="assets/images/aliments.jpg" alt="Légumes frais colorés riches en vitamines" loading="lazy" width="280" height="175">
+              </div>
+              <div class="aliment-card-body">
+                <h3 class="aliment-card-title">Les légumes de saison</h3>
+                <p class="aliment-card-sub">Vitamines & minéraux essentiels</p>
+              </div>
+            </article>
+
+            <article class="aliment-card fade-in">
+              <div class="aliment-card-img">
+                <img src="assets/images/article2.jpg" alt="Herbes aromatiques fraîches : basilic, thym, romarin" loading="lazy" width="280" height="175">
+              </div>
+              <div class="aliment-card-body">
+                <h3 class="aliment-card-title">Herbes aromatiques</h3>
+                <p class="aliment-card-sub">Saveurs & propriétés médicinales</p>
+              </div>
+            </article>
+
+            <article class="aliment-card fade-in">
+              <div class="aliment-card-img">
+                <img src="assets/images/article3.jpg" alt="Superaliments et graines pour une alimentation saine" loading="lazy" width="280" height="175">
+              </div>
+              <div class="aliment-card-body">
+                <h3 class="aliment-card-title">Superaliments</h3>
+                <p class="aliment-card-sub">Antioxydants & énergie naturelle</p>
+              </div>
+            </article>
+
+            <article class="aliment-card fade-in">
+              <div class="aliment-card-img">
+                <img src="assets/images/recettes.jpg" alt="Fromages et produits laitiers artisanaux italiens" loading="lazy" width="280" height="175">
+              </div>
+              <div class="aliment-card-body">
+                <h3 class="aliment-card-title">Fromages italiens</h3>
+                <p class="aliment-card-sub">Calcium & probiotiques naturels</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ASTUCES ========== -->
+    <section class="astuces" id="astuces" aria-labelledby="astuces-title">
+      <div class="container">
+        <div class="astuces-grid">
+          <div class="astuces-img-wrap fade-in">
+            <img src="assets/images/astuces.jpg" alt="Chef professionnel partageant ses astuces en cuisine" loading="lazy" width="460" height="575">
+            <div class="astuces-badge">
+              <strong>+50</strong>
+              <span>Astuces pro</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="section-header fade-in">
+              <span class="section-label">Astuces de cuisine</span>
+              <h2 class="section-title" id="astuces-title">Les secrets des grands chefs à votre portée</h2>
+              <p class="section-desc">
+                Profitez de conseils pratiques et astuces de chefs pour améliorer vos techniques culinaires au quotidien.
+              </p>
+            </div>
+
+            <div class="astuces-list">
+              <article class="astuce-item fade-in">
+                <div class="astuce-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="astuce-body">
+                  <h3 class="astuce-title">Maîtriser la température de cuisson</h3>
+                  <p class="astuce-desc">Un thermomètre de cuisine change tout : viandes parfaitement rosées, pâtisseries bien levées. La précision est le premier secret des chefs.</p>
+                </div>
+              </article>
+
+              <article class="astuce-item fade-in">
+                <div class="astuce-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+                </div>
+                <div class="astuce-body">
+                  <h3 class="astuce-title">L'art d'assaisonner à chaque étape</h3>
+                  <p class="astuce-desc">Ne salez pas uniquement à la fin. Assaisonnez à chaque étape de cuisson pour des couches de saveurs profondes et équilibrées.</p>
+                </div>
+              </article>
+
+              <article class="astuce-item fade-in">
+                <div class="astuce-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 2l3 3-3 3"/><path d="M21 2l-3 3 3 3"/><path d="M12 22V12"/><path d="M3 12h18"/><path d="M3 17h18"/><path d="M3 7h18"/></svg>
+                </div>
+                <div class="astuce-body">
+                  <h3 class="astuce-title">La mise en place : travailler comme un pro</h3>
+                  <p class="astuce-desc">Préparez et organisez tous vos ingrédients avant de commencer. Cette méthode de chef réduit le stress et améliore la précision culinaire.</p>
+                </div>
+              </article>
+
+              <article class="astuce-item fade-in">
+                <div class="astuce-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </div>
+                <div class="astuce-body">
+                  <h3 class="astuce-title">Valoriser les restes avec créativité</h3>
+                  <p class="astuce-desc">Un gratin de légumes avec les restes, une soupe du réfrigérateur, des croquettes de pommes de terre — le zéro déchet en cuisine c'est aussi du talent.</p>
+                </div>
+              </article>
+            </div>
+
+            <div style="margin-top:2rem;" class="fade-in">
+              <a href="#astuces" class="btn btn-primary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+                Découvrez nos astuces
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== NEWSLETTER ========== -->
+    <section class="newsletter" id="newsletter" aria-labelledby="newsletter-title">
+      <div class="container">
+        <div class="newsletter-inner">
+          <div class="newsletter-content fade-in">
+            <span class="section-label">Newsletter Pizza Di Muro</span>
+            <h2 class="section-title" id="newsletter-title">Ne manquez aucune recette ni astuce !</h2>
+            <p class="section-desc">
+              Inscrivez-vous à notre newsletter pour recevoir directement nos meilleures recettes, astuces et actualités.
+            </p>
+            <ul class="newsletter-perks">
+              <li class="newsletter-perk">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                1 newsletter hebdomadaire, zéro spam
+              </li>
+              <li class="newsletter-perk">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Recettes exclusives réservées aux abonnés
+              </li>
+              <li class="newsletter-perk">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Astuces de chefs en avant-première
+              </li>
+              <li class="newsletter-perk">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Désinscription facile à tout moment
+              </li>
+            </ul>
+          </div>
+
+          <div class="newsletter-form-box fade-in">
+            <h3 class="newsletter-form-title">Rejoignez 50 000 passionnés de cuisine</h3>
+            <form class="newsletter-form" novalidate>
+              <div class="form-group">
+                <label for="nl-firstname">Prénom</label>
+                <input type="text" id="nl-firstname" name="firstname" placeholder="Votre prénom" required autocomplete="given-name">
+              </div>
+              <div class="form-group">
+                <label for="nl-email">Adresse e-mail</label>
+                <input type="email" id="nl-email" name="email" placeholder="votre@email.fr" required autocomplete="email">
+              </div>
+              <button type="submit" class="btn btn-primary form-submit">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                S'abonner à la newsletter
+              </button>
+              <p class="form-privacy">En vous inscrivant, vous acceptez notre <a href="#" style="color:var(--red)">politique de confidentialité</a>.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/images/logo.png" alt="Pizza Di Muro" width="100" height="40">
+            <span class="footer-logo-text">Pizza <span>Di Muro</span></span>
+          </div>
+          <p class="footer-brand-desc">
+            Le blog food de référence pour découvrir des recettes savoureuses, des astuces de chefs et toute l'actualité culinaire au quotidien.
+          </p>
+          <div class="footer-social" aria-label="Réseaux sociaux">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.97C5.12 20 12 20 12 20s6.88 0 8.59-.45a2.78 2.78 0 0 0 1.96-1.97A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon fill="white" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.16 8.16 0 0 0 4.77 1.52V6.75a4.85 4.85 0 0 1-1-.06z"/></svg>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Rubriques -->
+        <div class="footer-col">
+          <h4>Rubriques</h4>
+          <ul class="footer-links">
+            <li><a href="#actualites"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Actualités</a></li>
+            <li><a href="#recettes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Recettes</a></li>
+            <li><a href="#aliments"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Aliments</a></li>
+            <li><a href="#astuces"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Astuces de cuisine</a></li>
+          </ul>
+        </div>
+
+        <!-- Informations -->
+        <div class="footer-col">
+          <h4>Informations</h4>
+          <ul class="footer-links">
+            <li><a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>À propos</a></li>
+            <li><a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Contact</a></li>
+            <li><a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Nos auteurs</a></li>
+            <li><a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Sitemap</a></li>
+          </ul>
+        </div>
+
+        <!-- Légal -->
+        <div class="footer-col">
+          <h4>Légal</h4>
+          <ul class="footer-links">
+            <li><a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Mentions légales</a></li>
+            <li><a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Politique de confidentialité</a></li>
+            <li><a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Cookies (UE)</a></li>
+            <li><a href="#newsletter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>Newsletter</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-col">
-        <h4>Recettes populaires</h4>
-        <ul>
-          <li><a href="#">Pizza napolitaine</a></li>
-          <li><a href="#">Pasta carbonara</a></li>
-          <li><a href="#">Risotto aux champignons</a></li>
-          <li><a href="#">Tiramisu maison</a></li>
-          <li><a href="#">Gratin dauphinois</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>À propos</h4>
-        <ul>
-          <li><a href="#">Notre équipe</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Partenariats</a></li>
-          <li><a href="#">Plan du site</a></li>
-          <li><a href="#">Mentions légales</a></li>
-        </ul>
+      <div class="footer-bottom">
+        <span>© 2026 Pizza Di Muro. Tous droits réservés.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Mentions légales</a>
+          <a href="#">Confidentialité</a>
+          <a href="#">Cookies</a>
+        </div>
       </div>
     </div>
+  </footer>
 
-    <div class="footer-bottom">
-      <p>© 2026 Pizza Di Muro. Tous droits réservés.</p>
-      <nav class="footer-legal" aria-label="Liens légaux">
-        <a href="#">Mentions légales</a>
-        <a href="#">Confidentialité</a>
-        <a href="#">Cookies</a>
-      </nav>
+  <!-- Back to top -->
+  <button class="back-to-top" aria-label="Retour en haut de page">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- Cookie banner -->
+  <div class="cookie-banner" role="dialog" aria-label="Consentement aux cookies" aria-live="polite">
+    <div class="container">
+      <div class="cookie-inner">
+        <p class="cookie-text">
+          Nous utilisons des cookies pour améliorer votre expérience sur notre site. En continuant à naviguer, vous acceptez notre utilisation des cookies.
+          <a href="#">En savoir plus</a>
+        </p>
+        <div class="cookie-actions">
+          <button class="btn-cookie btn-cookie-decline">Refuser</button>
+          <button class="btn-cookie btn-cookie-accept">Accepter</button>
+        </div>
+      </div>
     </div>
   </div>
-</footer>
 
-<!-- ===== BACK TO TOP ===== -->
-<button class="back-to-top" aria-label="Retour en haut de page">
-  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>
-</button>
-
-<script src="assets/js/main.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
