@@ -1,37 +1,44 @@
-/* Pizza Di Muro - Main JavaScript */
-
-(function () {
+/* Pizza Di Muro - Main JS */
+(function() {
   'use strict';
 
-  // ===== MOBILE MENU =====
-  const hamburger = document.getElementById('hamburger');
-  const mobileMenu = document.getElementById('mobileMenu');
-  const mobileClose = document.getElementById('mobileClose');
+  // Mobile nav toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
 
-  function openMenu() {
-    mobileMenu.classList.add('open');
-    document.body.style.overflow = 'hidden';
-    hamburger.setAttribute('aria-expanded', 'true');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      const isOpen = navLinks.classList.contains('open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+      // Animate hamburger lines
+      const spans = navToggle.querySelectorAll('span');
+      if (isOpen) {
+        spans[0].style.transform = 'translateY(7px) rotate(45deg)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+      } else {
+        spans[0].style.transform = '';
+        spans[1].style.opacity = '';
+        spans[2].style.transform = '';
+      }
+    });
+
+    // Close menu on outside click
+    document.addEventListener('click', (e) => {
+      if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
+        navLinks.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.querySelectorAll('span').forEach(s => s.style = '');
+      }
+    });
   }
 
-  function closeMenu() {
-    mobileMenu.classList.remove('open');
-    document.body.style.overflow = '';
-    hamburger.setAttribute('aria-expanded', 'false');
-  }
-
-  if (hamburger) hamburger.addEventListener('click', openMenu);
-  if (mobileClose) mobileClose.addEventListener('click', closeMenu);
-
-  mobileMenu && mobileMenu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', closeMenu);
-  });
-
-  // ===== SEARCH OVERLAY =====
-  const searchBtn = document.getElementById('searchBtn');
-  const searchOverlay = document.getElementById('searchOverlay');
-  const searchClose = document.getElementById('searchClose');
-  const searchInput = document.getElementById('searchInput');
+  // Search overlay
+  const searchBtn = document.querySelector('.nav-search-btn');
+  const searchOverlay = document.querySelector('.search-overlay');
+  const searchClose = document.querySelector('.search-close');
+  const searchInput = searchOverlay ? searchOverlay.querySelector('input') : null;
 
   function openSearch() {
     searchOverlay.classList.add('active');
@@ -46,132 +53,128 @@
 
   if (searchBtn) searchBtn.addEventListener('click', openSearch);
   if (searchClose) searchClose.addEventListener('click', closeSearch);
-
-  searchOverlay && searchOverlay.addEventListener('click', (e) => {
-    if (e.target === searchOverlay) closeSearch();
-  });
+  if (searchOverlay) {
+    searchOverlay.addEventListener('click', (e) => {
+      if (e.target === searchOverlay) closeSearch();
+    });
+  }
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
+    if (e.key === 'Escape' && searchOverlay && searchOverlay.classList.contains('active')) {
       closeSearch();
-      closeMenu();
-    }
-    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
-      e.preventDefault();
-      openSearch();
     }
   });
 
-  // ===== BACK TO TOP =====
-  const backToTop = document.getElementById('backToTop');
-
-  window.addEventListener('scroll', () => {
-    if (backToTop) {
-      backToTop.classList.toggle('visible', window.scrollY > 450);
-    }
-  }, { passive: true });
-
+  // Back to top
+  const backToTop = document.querySelector('.back-to-top');
   if (backToTop) {
+    window.addEventListener('scroll', () => {
+      backToTop.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+
     backToTop.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
 
-  // ===== SCROLL ANIMATIONS =====
-  const animatedEls = document.querySelectorAll('[data-animate]');
-
-  if ('IntersectionObserver' in window) {
+  // Intersection Observer for fade-in animations
+  const fadeEls = document.querySelectorAll('.fade-in');
+  if (fadeEls.length && 'IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, i) => {
+      entries.forEach(entry => {
         if (entry.isIntersecting) {
-          const delay = entry.target.dataset.delay || 0;
-          setTimeout(() => {
-            entry.target.classList.add('visible');
-          }, parseInt(delay));
+          entry.target.classList.add('visible');
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
-    animatedEls.forEach(el => observer.observe(el));
+    fadeEls.forEach(el => observer.observe(el));
   } else {
-    animatedEls.forEach(el => el.classList.add('visible'));
+    fadeEls.forEach(el => el.classList.add('visible'));
   }
 
-  // ===== NEWSLETTER FORM =====
-  const newsletterForm = document.getElementById('newsletterForm');
-  const toast = document.getElementById('toast');
-
-  function showToast(msg) {
-    if (!toast) return;
-    toast.querySelector('.toast-msg').textContent = msg;
-    toast.classList.add('show');
-    setTimeout(() => toast.classList.remove('show'), 4500);
-  }
-
-  function isValidEmail(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  }
-
+  // Newsletter form
+  const newsletterForm = document.querySelector('.newsletter-form');
   if (newsletterForm) {
     newsletterForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      const emailInput = newsletterForm.querySelector('input[type="email"]');
-      const email = emailInput ? emailInput.value.trim() : '';
+      const input = newsletterForm.querySelector('input[type="email"]');
+      const email = input ? input.value.trim() : '';
 
-      if (!email || !isValidEmail(email)) {
-        emailInput && emailInput.focus();
-        showToast('Veuillez entrer une adresse email valide.');
+      if (!email || !email.includes('@')) {
+        showToast('Veuillez entrer une adresse email valide.', 'error');
         return;
       }
 
-      const btn = newsletterForm.querySelector('button[type="submit"]');
-      const originalHTML = btn.innerHTML;
-      btn.innerHTML = 'Inscription en cours…';
-      btn.disabled = true;
-
-      setTimeout(() => {
-        btn.innerHTML = '&#10003; Inscrit avec succès !';
-        showToast('Bienvenue ! Vous recevrez nos meilleures recettes dès demain.');
-        newsletterForm.reset();
-        setTimeout(() => {
-          btn.innerHTML = originalHTML;
-          btn.disabled = false;
-        }, 3500);
-      }, 1200);
+      showToast('Merci ! Vous êtes inscrit à notre newsletter.');
+      if (input) input.value = '';
     });
   }
 
-  // ===== STICKY HEADER =====
-  const header = document.querySelector('.header');
-  let lastScroll = 0;
-
-  window.addEventListener('scroll', () => {
-    if (!header) return;
-    const currentScroll = window.scrollY;
-    if (currentScroll > 10) {
-      header.style.boxShadow = '0 4px 24px rgba(0,0,0,0.12)';
-    } else {
-      header.style.boxShadow = '0 2px 8px rgba(0,0,0,0.08)';
+  // Toast notification
+  function showToast(message, type) {
+    let toast = document.querySelector('.toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.className = 'toast';
+      document.body.appendChild(toast);
     }
-    lastScroll = currentScroll;
-  }, { passive: true });
+    toast.textContent = message;
+    toast.style.borderLeftColor = type === 'error' ? '#f59e0b' : '#e12c2c';
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 3500);
+  }
 
-  // ===== SEARCH TAGS =====
-  document.querySelectorAll('.search-tags a').forEach(tag => {
-    tag.addEventListener('click', (e) => {
-      e.preventDefault();
-      if (searchInput) {
-        searchInput.value = tag.textContent;
-        searchInput.focus();
+  // Lazy loading images (native + fallback)
+  if ('loading' in HTMLImageElement.prototype) {
+    // Native lazy loading is supported — already handled via HTML attribute
+  } else {
+    const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+    if ('IntersectionObserver' in window) {
+      const imgObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            if (img.dataset.src) img.src = img.dataset.src;
+            imgObserver.unobserve(img);
+          }
+        });
+      });
+      lazyImages.forEach(img => imgObserver.observe(img));
+    }
+  }
+
+  // Active nav link highlighting based on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
+
+  if (sections.length && navAnchors.length) {
+    const scrollSpy = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          navAnchors.forEach(a => {
+            a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+          });
+        }
+      });
+    }, { threshold: 0.3 });
+
+    sections.forEach(s => scrollSpy.observe(s));
+  }
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', (e) => {
+      const target = document.querySelector(anchor.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        const offset = 80; // header height
+        const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top, behavior: 'smooth' });
+        if (navLinks) navLinks.classList.remove('open');
       }
-    });
-  });
-
-  // ===== STAGGERED CARD ANIMATIONS =====
-  document.querySelectorAll('.articles-grid').forEach(grid => {
-    grid.querySelectorAll('[data-animate]').forEach((card, i) => {
-      card.dataset.delay = i * 90;
     });
   });
 
